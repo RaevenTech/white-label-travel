@@ -1,0 +1,45 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  background-color: #eeeeee;
+  color: #575757;
+}
+
+/*------------- landing page ----------------------*/
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-main-title {
+  width: 90%;
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+}
+
+.landing-page-title-bold {
+  font-weight: 500;
+}
+
+.landing-page-main-logo {
+  width: 50%;
+}
+
+.landing-page-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.landing-page-link {
+  color: #8a8a8a;
+  text-align: center;
+  border: 3px solid whitesmoke;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 2px gray;
+  text-decoration: none;
+}
