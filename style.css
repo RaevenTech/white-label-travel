@@ -5,6 +5,11 @@ body {
   color: #575757;
 }
 
+a {
+  color: #575757;
+  text-decoration: none;
+}
+
 /*------------- landing page ----------------------*/
 .landing-page-container {
   display: flex;
@@ -36,10 +41,68 @@ body {
 
 .landing-page-link {
   color: #8a8a8a;
+  background-color: #e0e0e0;
   text-align: center;
   border: 3px solid whitesmoke;
   padding: 1.5rem 1rem;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 2px gray;
   text-decoration: none;
+}
+
+.landing-page-link:hover {
+  color: #e0e0e0;
+  background-color: #8a8a8a;
+  box-shadow: inset 1px 1px 3px 2px rgb(65, 65, 65);
+}
+
+/*------------- curious page ----------------------*/
+
+.info-page-container {
+  max-width: 70%;
+  margin: 25% auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 5px 2px gray;
+}
+
+.info-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------- clients page ----------------------*/
+
+.clients-page-container {
+  max-width: 70%;
+  margin: 25% auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 5px 2px gray;
+}
+
+.clients-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------- hotels page ----------------------*/
+
+.hotels-page-container {
+  max-width: 70%;
+  margin: 25% auto;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  box-shadow: 5px 5px 5px 2px gray;
+}
+
+.hotels-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
