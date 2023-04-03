@@ -1,13 +1,88 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  background-color: #eeeeee;
   color: #575757;
+  background-image: url(./images/eiffel-tower-blk-wht.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.99;
+  background-color: #eeeeee;
+  position: relative;
 }
 
 a {
   color: #575757;
   text-decoration: none;
+}
+
+/*------------- header/navbar  ----------------------*/
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text-logo {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #eeeeee;
+}
+
+.header-become-agent-link {
+  border: 1px solid gold;
+  background-color: goldenrod;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.header-become-agent-link:hover {
+  border: 1px solid goldenrod;
+  background-color: gold;
+  color: red;
+}
+
+
+/*------------------- footer ------------------------*/
+.footer-container {
+  text-align: center;
+  max-width: 50%;
+  margin: 0px auto;
+  padding: 0.7rem 0rem 0.5rem 0rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: #8a8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-link {
+  text-decoration: overline;
+  color: steelblue;
+}
+
+.footer-copyright {
+  font-size: .7rem;
 }
 
 /*------------- landing page ----------------------*/
@@ -16,6 +91,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0rem 2rem 2rem;
+  background-color: #eeeeeece;
 }
 
 .landing-page-main-title {
@@ -23,11 +100,16 @@ a {
   width: 90%;
   font-weight: 300;
   font-size: 2.5rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .landing-page-title-bold {
   font-weight: 500;
+}
+
+.landing-page-title-blue-bold {
+  font-weight: 500;
+  color: steelblue;
 }
 
 .landing-page-main-logo {
@@ -58,22 +140,6 @@ a {
   box-shadow: inset 1px 1px 3px 2px rgb(65, 65, 65);
 }
 
-/*------------- curious page ----------------------*/
-
-.info-page-container {
-  max-width: 70%;
-  margin: 25% auto;
-  border: 3px solid white;
-  border-radius: 10px;
-  background-color: #e0e0e0;
-  box-shadow: 5px 5px 5px 2px gray;
-}
-
-.info-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /*------------- clients page ----------------------*/
 

@@ -1,0 +1,89 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  color: #575757;
+  background-image: url("../images/tropical-island.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.99;
+  background-color: #eeeeee;
+  position: relative;
+}
+
+a {
+  color: #575757;
+  text-decoration: none;
+}
+
+/*------------- header/navbar  ----------------------*/
+.header-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text-logo {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #eeeeee;
+}
+
+.header-become-agent-link {
+  border: 1px solid gold;
+  background-color: goldenrod;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
+.header-become-agent-link:hover {
+  border: 1px solid goldenrod;
+  background-color: gold;
+  color: red;
+}
+
+/*------------- curious main page ----------------------*/
+
+
+
+/*------------------- footer ------------------------*/
+.footer-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0.7rem 0rem 0.5rem 0rem;
+}
+
+.footer-links {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-link {
+  color: #8a8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: .7rem;
+}
