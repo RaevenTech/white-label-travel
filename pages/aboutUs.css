@@ -2,13 +2,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #eeeeee;
-  background-image: url("../images/islands.jpg");
+  background-image: url();
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.99;
-  background-color: #575757;
-  position: relative;
+
 }
 
 a {
@@ -54,71 +53,9 @@ a {
   color: red;
 }
 
-/*------------- info page ----------------------*/
+/*------------- About us page ----------------------*/
 
-.curious-main-container {
-  margin: 0px auto;
-  max-width: 100%;
-  padding: 3rem 2rem;
 
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.curious-main-title-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-  gap: 0.5rem;
-}
-
-.curious-main-title {
-  font-size: 2.7rem;
-  font-weight: 300;
-  text-shadow: 3px 3px 5px 2px black;
-  color: #eeeeee;
-  margin-bottom: 40px;
-}
-
-.how-it-works-accent {
-  color: steelblue;
-}
-
-.curious-hashtag-container {
-  display: flex;
-}
-
-.curious-hashtag {
-  font-size: 1.3rem;
-  text-shadow: 3px 3px 5px 5px black;
-}
-
-.hashtag-violet {
-  color: violet;
-}
-
-.hashtag-gold {
-  color: gold;
-}
-
-.hashtag-steelblue {
-  color: orangered;
-}
-
-.how-it-all-works {
-  color: #575757;
-  max-width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2.2rem;
-  border: 3px solid #ccc;
-  background-color: #eeeeeed2;
-  line-height: 1.8rem;
-  border-radius: 10px;
-}
 
 
 /*------------------- footer ------------------------*/

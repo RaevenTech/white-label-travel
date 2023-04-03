@@ -77,6 +77,11 @@ a {
   align-items: center;
 }
 
+.footer-link:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3ms;
+}
+
 .login-link {
   text-decoration: 2px overline;
   color: steelblue;
