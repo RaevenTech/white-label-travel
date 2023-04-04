@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+  color: #575757;
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: fill;
+  opacity: 0.99;
+  background-color: #aaccf8;
+  position: relative;
+  max-width: 1280px;
+}
+
+@media(min-width:1280px) {
+  body {
+    margin: 0px auto;
+  }
+}
+
+a {
+  color: #575757;
+  text-decoration: none;
+}
+
+/*------------- header/navbar  ----------------------*/
+.header-wrapper {
+  max-width: 100%;
+}
+
+.header-container {
+  max-width: 80%;
+  margin: 0px auto;
+}
+
+.header-title-subtext {
+  color: crimson;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+@media(max-width:480px) {
+  .header-title {
+    font-size: 2rem;
+    margin: 0px;
+  }
+}
+
+.header-txt-hashtag {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media(max-width:480px) {
+  .header-txt-hashtag {
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: start;
+  }
+}
+
+.header-hashtag {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1.9rem
+}
+
+@media(max-width:480px) {
+  .header-hashtag {
+    font-size: 1.2rem;
+    margin-top: 0rem
+  }
+}
+
+.hashtag-lightgreen {
+  color: lightslategray;
+}
+
+.hashtag-steelblue {
+  color: steelblue;
+}
+
+.hashtag-goldenrod {
+  color: goldenrod;
+}
+
+.hashtag-violet {
+  color: violet;
+}
+
+/*------------------- Team page ------------------------*/
+.main-wrapper {
+  max-width: 100%;
+}
+
+
+/*------------------- footer ------------------------*/
+.footer-container {
+  text-align: center;
+  max-width: 70%;
+  margin: 0px auto;
+  padding: 0.7rem 0rem 0.5rem 0rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  font-weight: 400;
+  color: #8a8a8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link:hover {
+  transform: scale(1.1);
+  transition: ease-in 0.3ms;
+}
+
+.home-link {
+  text-decoration: 2px overline;
+  color: steelblue;
+}
+
+.footer-copyright {
+  font-size: .7rem;
+}

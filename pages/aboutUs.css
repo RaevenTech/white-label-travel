@@ -108,6 +108,22 @@ a {
   color: goldenrod;
 }
 
+.meet-the-team {
+  text-align: center;
+}
+
+.meet-team-link {
+  background-color: steelblue;
+  border-radius: 5px;
+  padding: 0.3rem 2.5rem;
+  color: #eeeeee;
+}
+
+.meet-team-link:hover {
+  background-color: rgb(101, 159, 206);
+  color: #eeeeee;
+}
+
 
 /*------------- About us page ----------------------*/
 
