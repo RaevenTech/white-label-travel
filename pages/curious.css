@@ -9,6 +9,13 @@ body {
   opacity: 0.99;
   background-color: #575757;
   position: relative;
+  max-width: 1280px;
+}
+
+@media(min-width:1280px) {
+  body {
+    margin: 0px auto;
+  }
 }
 
 a {
@@ -117,6 +124,14 @@ a {
   border: 3px solid #ccc;
   background-color: #eeeeeed2;
   line-height: 1.8rem;
+  border-radius: 10px;
+}
+
+.agent-registration-link-btn {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: steelblue;
+  color: #eeeeee;
   border-radius: 10px;
 }
 

@@ -12,6 +12,12 @@ body {
   max-width: 1280px;
 }
 
+@media(min-width:1280px) {
+  body {
+    margin: 0px auto;
+  }
+}
+
 a {
   color: #575757;
   text-decoration: none;
