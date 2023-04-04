@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #575757;
-  background-image: url("/images/lasvegas-strip.jpg");
+  background-image: url("");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,6 +115,48 @@ a {
   max-width: 90%;
 }
 
+.main-container {
+  display: flex;
+  max-width: 90%;
+  margin: 0px auto 0px 0px;
+}
+
+@media(max-width:480px) {
+  .main-container {
+    margin: 0.25px auto;
+  }
+}
+
+.left-about-container {
+  display: flex;
+  margin: 0rem auto;
+}
+
+@media(max-width:480px) {
+  .left-about-container {
+    width: 90%;
+    border: 1px solid #575757;
+    padding: 0.5rem;
+  }
+}
+
+.about-img {
+  max-width: 40%;
+  object-fit: fill;
+  display: block;
+}
+
+@media(max-width:480px) {
+  .about-img {
+    display: none;
+  }
+}
+
+
+.right-about-container {
+  max-width: 60%;
+}
+
 
 /*------------------- footer ------------------------*/
 .footer-container {
@@ -123,7 +165,7 @@ a {
   max-width: 100%;
   margin: 0px auto;
   padding: 0.7rem 0rem 0.5rem 0rem;
-  position: fixed;
+  position: static;
   bottom: 0px;
   right: 0px;
   left: 0px;
