@@ -9,6 +9,7 @@ body {
   opacity: 0.99;
   background-color: #eeeeee;
   position: relative;
+  max-width: 1280px;
 }
 
 a {
@@ -70,7 +71,7 @@ a {
 }
 
 .footer-link {
-  font-weight: 300;
+  font-weight: 400;
   color: #8a8a8a;
   display: flex;
   justify-content: center;

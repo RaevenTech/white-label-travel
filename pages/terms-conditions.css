@@ -9,6 +9,13 @@ body {
   opacity: 0.99;
   background-color: #e0e0e0;
   position: relative;
+  max-width: 1280px;
+}
+
+@media(min-width:1280px) {
+  body {
+    margin: 0px auto;
+  }
 }
 
 a {
@@ -59,7 +66,7 @@ a {
 
 
 .terms-and-conditions {
-  border: 2px solid #575757;
+  border: 2px solid #eeeeee;
   border-radius: 10px;
   padding: 2rem 1.5rem;
   max-width: 70%;
@@ -69,6 +76,16 @@ a {
   margin-top: 5rem;
   margin-bottom: 5rem;
   background-color: #eeeeee;
+  box-shadow: inset 0px 0px px #8a8a8a;
+}
+
+.submit-btn {
+  padding: 5px 10px;
+  margin-left: 2rem;
+}
+
+.submit-btn:hover {
+  background-color: steelblue;
 }
 
 
