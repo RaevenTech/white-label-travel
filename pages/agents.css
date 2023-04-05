@@ -1,13 +1,15 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  color: #575757;
+  color: #e6e6e6;
   background-image: url("");
+  opacity: 0.99;
+  max-width: 1280px;
+  background: rgb(23, 24, 23);
+  background: linear-gradient(45deg, rgba(23, 24, 23, 1) 24%, rgba(47, 79, 79, 1) 67%, rgba(96, 96, 96, 1) 98%);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.99;
-  max-width: 1280px;
 }
 
 @media(min-width:1280px) {
@@ -23,85 +25,66 @@ a {
 
 /*------------- header/navbar  ----------------------*/
 .header-wrapper {
-  background-color: #eeeeee;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem 1.5rem;
+  width: 100%;
+  background-color: transparent;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+
+.wlt-logo-txt {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 
 @media(max-width:480px) {
-  .header-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.header-wtl-logo {
-  display: flex;
-  align-items: center;
-  width: 12rem;
-}
-
-@media(max-width:480px) {
-  .header-wtl-logo {
-    width: 10rem;
-    margin: 0px auto;
+  .wlt-logo-txt {
+    font-size: 1.1rem;
+    padding-left: 1rem;
   }
 }
 
 .header-txt-hashtag {
-  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
 }
 
 @media(max-width:480px) {
   .header-txt-hashtag {
-    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
   }
 }
 
+
 .header-title {
-  font-weight: 400;
-  margin-bottom: 0px;
+  font-weight: 300;
   font-size: 3rem;
 }
 
 @media(max-width:480px) {
   .header-title {
-    padding: 0rem;
+    font-weight: 300;
     font-size: 2rem;
+    margin: 0rem;
   }
-}
-
-.header-title-subtext {
-  font-size: 1.3rem;
 }
 
 .header-hashtag {
   display: flex;
   font-size: 1.5rem;
-  font-weight: 400;
-  text-shadow: 1px 1px 10px rgb(252, 252, 252);
+  font-weight: 500;
+
 }
 
 .hashtag-steelblue {
   color: steelblue;
 }
 
-.hashtag-lightgreen {
-  color: lightgreen;
+.hashtag-red {
+  color: red;
 }
 
 .hashtag-goldenrod {
@@ -131,65 +114,9 @@ a {
   max-width: 90%;
 }
 
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 90%;
-
-}
-
-@media(max-width:480px) {
-  .main-container {
-    margin: 0.25px auto;
-  }
-}
-
-.left-about-container {
-  display: flex;
-  gap: 10rem;
-  margin: 0rem auto;
-}
-
-@media(max-width:480px) {
-  .left-about-container {
-    width: 90%;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px #8a8a8a;
-    padding: 0.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.about-img {
-  max-width: 40%;
-  object-fit: fill;
-  display: block;
-}
-
-@media(max-width:480px) {
-  .about-img {
-    display: none;
-  }
-}
-
-.about-txt-title {
-  margin-top: 4rem;
-}
-
-.about-title-accent {
-  color: steelblue;
-}
-
-.about-txt {
-  line-height: 1.5rem;
-}
-
 /*------------------- footer ------------------------*/
 .footer-wrapper {
   width: 100%;
-  background-color: darkslategrey;
   padding: .9rem 0rem .8rem 0rem;
 }
 
