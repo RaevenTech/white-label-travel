@@ -6,7 +6,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.99;
   background-color: #eeeeee;
   position: relative;
   max-width: 1280px;
@@ -28,74 +27,24 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  margin: 0px auto;
+  background-color: #eeeeeece;
 }
 
 .header-nav {
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: end;
+  align-items: end;
+  padding-top: 1rem;
 }
 
-.header-text-logo {
-  font-size: 1.3rem;
-  font-weight: 300;
-  color: #eeeeee;
-}
-
-.header-become-agent-link {
-  border: 1px solid gold;
-  background-color: goldenrod;
-  padding: .5rem 1rem;
-  border-radius: 10px;
-}
-
-.header-become-agent-link:hover {
-  border: 1px solid goldenrod;
-  background-color: gold;
-  color: red;
-}
-
-
-/*------------------- footer ------------------------*/
-.footer-container {
-  text-align: center;
-  max-width: 70%;
-  margin: 0px auto;
-  padding: 0.7rem 0rem 0.5rem 0rem;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0.1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-link {
-  font-weight: 400;
-  color: #8a8a8a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-link:hover {
-  transform: scale(1.1);
-  transition: ease-in 0.3ms;
-}
-
-.login-link {
-  text-decoration: 2px overline;
-  color: steelblue;
-}
-
-.footer-copyright {
-  font-size: .7rem;
+#dropdownMenuButton {
+  color: #575757;
+  background: transparent;
+  border: none;
+  text-decoration: underline;
 }
 
 /*------------- landing page ----------------------*/
@@ -114,6 +63,12 @@ a {
   font-weight: 300;
   font-size: 2.5rem;
   margin-top: 1rem;
+}
+
+@media(max-width:480px) {
+  .landing-page-main-title {
+    font-size: 2rem;
+  }
 }
 
 .landing-page-title-bold {
@@ -153,37 +108,15 @@ a {
   box-shadow: inset 1px 1px 3px 2px rgb(65, 65, 65);
 }
 
-
-/*------------- clients page ----------------------*/
-
-.clients-page-container {
-  max-width: 70%;
-  margin: 25% auto;
-  border: 3px solid white;
-  border-radius: 10px;
-  background-color: #e0e0e0;
-  box-shadow: 5px 5px 5px 2px gray;
+/*------------------- footer ------------------------*/
+.footer-container {
+  text-align: center;
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0.7rem 0rem 0.5rem 0rem;
+  background-color: #eeeeeece;
 }
 
-.clients-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*------------- hotels page ----------------------*/
-
-.hotels-page-container {
-  max-width: 70%;
-  margin: 25% auto;
-  border: 3px solid white;
-  border-radius: 10px;
-  background-color: #e0e0e0;
-  box-shadow: 5px 5px 5px 2px gray;
-}
-
-.hotels-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-copyright {
+  font-size: .7rem;
 }

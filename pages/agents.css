@@ -32,6 +32,9 @@ a {
 .header-container {
   max-width: 80%;
   margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .wlt-logo-txt {
@@ -45,6 +48,19 @@ a {
     font-size: 1rem;
     text-align: center;
   }
+}
+
+.agent-login {
+  color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: .3rem .5rem .4rem;
+}
+
+.agent-login:hover {
+  color: #262626;
+  background-color: rgba(255, 0, 0, 0.804);
+  border: none;
 }
 
 
@@ -121,14 +137,19 @@ a {
   display: flex;
 }
 
+@media(max-width:480px) {
+  .main-container {
+    margin: 1rem auto 2rem;
+  }
+}
+
 .main-img {
   width: 40%;
-
 }
 
 @media(max-width:480px) {
-  .main.img {
-    width: 0%
+  .main-img {
+    width: 0%;
   }
 }
 
@@ -137,11 +158,28 @@ a {
   object-fit: cover;
 }
 
+@media(max-width:480px) {
+  .agent-img {
+    display: none;
+  }
+}
+
+.agent-ota-title {
+  margin-top: 0rem;
+}
 
 .agent-ota-info {
-  padding: 0rem 1rem;
+  padding: 0rem 3rem;
   width: 60%;
 }
+
+@media(max-width:480px) {
+  .agent-ota-info {
+    margin: 0px auto;
+    padding: 0rem;
+  }
+}
+
 
 .agent-ota-title {
   font-weight: 300;
@@ -156,6 +194,13 @@ a {
   padding: .3rem 1.5rem;
   display: inline-block;
   margin-left: auto;
+  color: #e6e6e6;
+  border-radius: 5px;
+}
+
+.agent-reg-link:hover {
+  background-color: rgb(99, 171, 230);
+  ;
 }
 
 
@@ -164,6 +209,7 @@ a {
 .footer-wrapper {
   width: 100%;
   padding: .9rem 0rem .8rem 0rem;
+  border-top: 1px solid #8a8a8a;
 }
 
 .footer-container {
