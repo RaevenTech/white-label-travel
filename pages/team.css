@@ -26,6 +26,7 @@ a {
 /*------------- header/navbar  ----------------------*/
 .header-wrapper {
   max-width: 100%;
+  box-shadow: 2px 2px 7px 5px steelblue;
 }
 
 .header-container {
@@ -45,7 +46,7 @@ a {
 @media(max-width:480px) {
   .header-title {
     font-size: 2rem;
-    margin: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -59,7 +60,7 @@ a {
   .header-txt-hashtag {
     flex-direction: column;
     gap: 0.2rem;
-    align-items: start;
+    align-items: center;
   }
 }
 
@@ -73,7 +74,7 @@ a {
 @media(max-width:480px) {
   .header-hashtag {
     font-size: 1.2rem;
-    margin-top: 0rem
+    margin-top: 0rem 0rem 1rem 0rem;
   }
 }
 
@@ -91,12 +92,94 @@ a {
 
 .hashtag-violet {
   color: violet;
+  padding-bottom: .5rem;
 }
 
 /*------------------- Team page ------------------------*/
 .main-wrapper {
   max-width: 100%;
+  border-bottom: 2px solid steelblue;
 }
+
+.team-subtitle {
+  padding-left: 120px;
+  font-size: 2rem;
+}
+
+@media(max-width:480px) {
+  .team-subtitle {
+    padding-left: 20px;
+  }
+}
+
+.subtitle-accent {
+  color: darkgreen;
+}
+
+.team-container {
+  max-width: 90%;
+  margin: 0rem auto;
+  padding: 3rem 2rem;
+}
+
+@media(max-width:480px) {
+  .team-container {
+    max-width: 90%;
+    margin: 0rem auto;
+    padding: 1rem 0.5rem;
+  }
+}
+
+.team-members-cards {
+  width: 80%;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+}
+
+.team-members-cards {
+  width: 80%;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+@media(max-width:480px) {
+  .team-members-cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    justify-content: space-between;
+    gap: 0rem;
+  }
+}
+
+.team-member {
+  margin-bottom: 1.5rem;
+  border: 4px solid steelblue;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 4px 4px 5px 2px gray;
+}
+
+.member-avatar {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media(max-width:480px) {
+  .member-avatar {
+    object-fit: fill;
+  }
+}
+
+.member-name {
+  margin: 0rem 0rem 0.5rem 0rem;
+  text-align: center;
+}
+
 
 
 /*------------------- footer ------------------------*/
@@ -105,6 +188,14 @@ a {
   max-width: 70%;
   margin: 0px auto;
   padding: 0.7rem 0rem 0.5rem 0rem;
+}
+
+@media(max-width:480px) {
+  .footer-container {
+    text-align: center;
+    max-width: 95%;
+    ;
+  }
 }
 
 .footer-links {
