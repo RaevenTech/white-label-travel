@@ -49,112 +49,81 @@ a {
   color: #575757;
 }
 
-.header-become-agent-link {
-  border: 1px solid #575757;
-  background-color: #e0e0e0;
-  padding: .5rem 1rem;
-  border-radius: 10px;
-}
-
-.header-become-agent-link:hover {
-  border: 1px solid #e0e0e0;
-  background-color: #575757;
-  color: #eeeeee;
-}
-
-/*------------- info page ----------------------*/
-.registration-form {
-  display: flex;
-  width: 70%;
-  margin: 1.5rem auto 3rem;
-  border: 2px solid #c1c1c1;
-  gap: 1rem;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 2px 2px 8px 5px #8a8a8a;
-}
-
-.container-title {
-  text-align: center;
-  font-weight: 400
-}
-
 @media(max-width:480px) {
-  .container-title {
-    font-size: 1.5rem;
-    font-weight: 500;
+  .header-text-logo {
+    font-size: 1.1rem;
   }
 }
 
-.title-accent {
+.header-log-out-link:hover {
+  text-decoration: overline;
+  color: steelblue;
+  ;
+}
+
+/*------------- hotel-dash page ----------------------*/
+.main-wrapper {
+  text-align: center;
+  padding: 3rem 4rem;
+  position: relative;
+}
+
+@media(max-width:480px) {
+  .main-wrapper {
+    padding: 3rem 1.5rem;
+    text-align: start;
+  }
+}
+
+.add-listing-link {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  color: #575757;
+  font-weight: 500;
+  background-color: goldenrod;
+}
+
+@media(max-width:480px) {
+  .add-listing-link {
+    top: .6rem;
+    right: 1rem;
+  }
+}
+
+.main-title {
+  font-weight: 300;
+}
+
+@media(max-width:480px) {
+  .main-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+.title-accent-one {
+  font-weight: 400;
+  color: green;
+}
+
+.title-accent-two {
+  font-weight: 400;
   color: steelblue;
 }
 
-.form-title {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+.random {
+  border: 1px solid #8a8a8a;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: #575757 2px 2px 7px 1px;
 }
 
-@media(max-width:480px) {
-  .form-title {
-    font-size: 1.3rem;
-    font-weight: 500;
-  }
+.second-container {
+  margin-top: 2rem;
 }
-
-.form-wrapper {
-  width: 60%;
-  padding: .5rem 1.5rem;
-}
-
-@media(max-width:480px) {
-  .form-wrapper {
-    width: 100%;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-}
-
-.input {
-  width: 90%;
-  height: 2rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-}
-
-.checkbox-one {
-  margin-bottom: .5rem;
-}
-
-.submit-btn {
-  padding: .3rem 1rem;
-  margin-top: 1rem;
-  border-radius: 5px;
-  background-color: steelblue;
-  border: none;
-  color: #eeeeee;
-}
-
-.submit-btn:hover {
-  background-color: rgb(129, 186, 233);
-}
-
-.form-img-container {
-  width: 50%;
-}
-
-@media(max-width:480px) {
-  .form-img-container {
-    display: none;
-  }
-}
-
-.form-img {
-  width: 100%;
-  object-fit: contain;
-  display: block;
-}
-
 
 /*------------------- footer ------------------------*/
 .footer-container {
