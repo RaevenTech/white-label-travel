@@ -37,16 +37,38 @@ a {
 @media(max-width:480px) {
   .header-container {
     padding-top: 0rem;
+    padding-bottom: 0rem;
+    max-width: 80%;
   }
 }
 
 .header-img {
-  max-height: 9.25rem;
+  max-height: 15rem;
+  z-index: 2;
+  position: absolute;
+  left: 5rem;
+  top: 2rem;
+
 }
 
 @media(max-width:480px) {
   .header-img {
     width: 6rem;
+    display: none;
+  }
+}
+
+.wlt-logo-txt {
+  display: none;
+}
+
+@media(max-width:480px) {
+  .wlt-logo-txt {
+    font-size: 1rem;
+    font-weight: 300;
+    display: block;
+    margin-top: -1rem;
+
   }
 }
 
@@ -57,6 +79,14 @@ a {
   align-items: center;
   padding-top: 1rem;
   margin-bottom: 5.5rem;
+}
+
+@media(max-width:480px) {
+  .header-nav {
+    width: 40%;
+    margin-bottom: 3rem;
+    margin-left: 1.7rem;
+  }
 }
 
 #dropdownMenuButton {
@@ -237,6 +267,13 @@ a {
 .hotel-reg-link {
   padding: .4rem 1.5rem;
   background-color: steelblue;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+
+.hotel-reg-link:hover {
+  padding: .4rem 1.5rem;
+  background-color: deeppink;
   color: #eeeeee;
   border-radius: 5px;
 }
