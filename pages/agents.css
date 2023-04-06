@@ -10,6 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 @media(min-width:1280px) {
@@ -27,6 +28,13 @@ a {
 .header-wrapper {
   width: 100%;
   background-color: transparent;
+  margin: 1.5rem 0rem;
+}
+
+@media(max-width:480px) {
+  .header-wrapper {
+    padding-top: 0rem;
+  }
 }
 
 .header-container {
@@ -38,15 +46,29 @@ a {
 }
 
 .wlt-logo-txt {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-decoration: 1px solid underline;
+  visibility: hidden;
 }
 
 @media(max-width:480px) {
   .wlt-logo-txt {
-    font-size: 1rem;
+    visibility: visible;
+    font-size: 1.2rem;
     text-align: center;
+    font-weight: 400;
+    text-decoration: 1px solid underline;
+  }
+}
+
+.agent-header-logo {
+  width: 15rem;
+  position: absolute;
+  top: 0rem;
+  left: 7rem;
+}
+
+@media(max-width:480px) {
+  .agent-header-logo {
+    display: none;
   }
 }
 
@@ -92,6 +114,7 @@ a {
 .header-title {
   font-weight: 300;
   font-size: 3rem;
+  margin-top: 0rem;
 }
 
 @media(max-width:480px) {
