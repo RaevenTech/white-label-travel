@@ -4,7 +4,7 @@ body {
   color: #e6e6e6;
   background-image: url("");
   opacity: 0.99;
-  max-width: 1280px;
+  max-width: 100%;
   background: rgb(23, 24, 23);
   background: linear-gradient(45deg, rgba(23, 24, 23, 1) 65%, rgba(47, 79, 79, 1) 85%, rgba(96, 96, 96, 1) 98%);
   background-position: center;
@@ -75,6 +75,18 @@ a {
 @media(max-width:480px) {
   .agent-header-logo {
     display: none;
+  }
+}
+
+@media(max-width:1000px) {
+  .agent-header-logo {
+    display: none;
+  }
+}
+
+@media(min-width:1280px) {
+  .agent-header-logo {
+    width: 20%
   }
 }
 
