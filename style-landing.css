@@ -127,3 +127,9 @@ a {
 .footer-copyright {
   font-size: .7rem;
 }
+
+@media(max-width:480px) {
+  .footer-copyright {
+    font-size: .5rem;
+  }
+}

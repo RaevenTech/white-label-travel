@@ -74,7 +74,7 @@ a {
 @media(max-width:480px) {
   .header-hashtag {
     font-size: 1.2rem;
-    margin-top: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
   }
 }
 
@@ -226,4 +226,10 @@ a {
 
 .footer-copyright {
   font-size: .7rem;
+}
+
+@media(max-width:480px) {
+  .footer-copyright {
+    font-size: .5rem;
+  }
 }

@@ -36,9 +36,8 @@ a {
 
 @media(max-width:480px) {
   .header-container {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    max-width: 80%;
+    padding: 0rem;
+    max-width: 90%;
   }
 }
 
@@ -85,7 +84,6 @@ a {
   .header-nav {
     width: 40%;
     margin-bottom: 3rem;
-    margin-left: 1.7rem;
   }
 }
 
@@ -243,11 +241,16 @@ a {
     padding: 0rem;
     max-width: 80%;
     margin-bottom: 1.2rem;
+    margin-top: 2rem;
   }
 }
 
 .info-title {
   font-weight: 400;
+}
+
+.info-title-accent {
+  color: steelblue;
 }
 
 .hotel-partner-benefits {
@@ -260,8 +263,11 @@ a {
   }
 }
 
-.info-title-accent {
-  color: steelblue;
+@media(max-width:480px) {
+  .reg-btn-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
 }
 
 .hotel-reg-link {
