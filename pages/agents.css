@@ -45,6 +45,12 @@ a {
   justify-content: space-between;
 }
 
+@media(max-width:480px) {
+  .header-container {
+    max-width: 90%;
+  }
+}
+
 .wlt-logo-txt {
   visibility: hidden;
 }
@@ -52,7 +58,7 @@ a {
 @media(max-width:480px) {
   .wlt-logo-txt {
     visibility: visible;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 400;
     text-decoration: 1px solid underline;
@@ -106,10 +112,9 @@ a {
     flex-direction: column;
     align-items: center;
     gap: .1rem;
-    margin-left: 2rem;
+    margin: 0px auto;
   }
 }
-
 
 .header-title {
   font-weight: 300;
@@ -187,39 +192,51 @@ a {
   }
 }
 
-.agent-ota-title {
-  margin-top: 0rem;
-}
-
 .agent-ota-info {
   padding: 0rem 3rem;
-  width: 60%;
+  max-width: 60%;
 }
 
 @media(max-width:480px) {
   .agent-ota-info {
     margin: 0px auto;
     padding: 0rem;
+    max-width: 80%;
   }
 }
 
-
 .agent-ota-title {
   font-weight: 300;
+  margin-top: 0rem;
+  margin-bottom: .5rem;
+  text-decoration: underline 1px solid;
 }
 
 .ota-title-accent {
   color: steelblue;
+  font-weight: 400;
 }
+
+
 
 .agent-reg-link {
   background-color: steelblue;
   padding: .3rem 1.5rem;
-  display: inline-block;
-  margin-left: auto;
   color: #e6e6e6;
   border-radius: 5px;
 }
+
+@media(max-width:480px) {
+  .agent-reg-link {
+    padding: .3rem 1.5rem;
+  }
+
+  .reg-btn-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
 
 .agent-reg-link:hover {
   background-color: rgb(99, 171, 230);
@@ -246,6 +263,8 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0px auto;
+  font-size: 1rem;
+  gap: 1rem;
 }
 
 .footer-link {
