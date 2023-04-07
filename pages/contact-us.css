@@ -26,7 +26,7 @@ a {
 
 /*------------- header/navbar  ----------------------*/
 .header-container {
-  background-color: #eeeeee1f;
+  background-color: #eeeeee2a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,6 +34,13 @@ a {
   margin-left: auto;
   margin-right: auto;
   box-shadow: 2px 2px 5px #8a8a8a;
+}
+
+@media(max-width:480px) {
+  .header-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .header-nav {
@@ -45,22 +52,31 @@ a {
 }
 
 .header-text-logo {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 300;
   color: #eeeeee;
 }
 
-.header-become-agent-link {
-  border: 1px solid #575757;
-  background-color: #e0e0e0;
-  padding: .5rem 1rem;
-  border-radius: 10px;
+@media(max-width:480px) {
+  .header-text-logo {
+    font-size: 1.3rem;
+  }
 }
 
-.header-become-agent-link:hover {
-  border: 1px solid #e0e0e0;
-  background-color: #575757;
+.header-back-btn {
   color: #eeeeee;
+}
+
+@media(max-width:480px) {
+  .header-text-logo {
+    font-size: 1rem;
+  }
+}
+
+
+.header-become-agent-link:hover {
+  color: steelblue;
+  text-decoration: overline;
 }
 
 /*------------- info page ----------------------*/
@@ -84,6 +100,12 @@ a {
 
 @media(max-width:480px) {
   .container-title {
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media(max-width:480px) {
+  .container-title {
     font-size: 1.5rem;
     font-weight: 500;
   }
@@ -102,6 +124,7 @@ a {
   .form-title {
     font-size: 1.3rem;
     font-weight: 500;
+    text-align: center;
   }
 }
 
@@ -134,6 +157,12 @@ a {
   margin-bottom: .5rem;
 }
 
+@media(max-width:480px) {
+  .submit-btn-container {
+    text-align: center;
+  }
+}
+
 .submit-btn {
   font-size: 1.1rem;
   font-weight: 200;
@@ -143,6 +172,7 @@ a {
   background-color: steelblue;
   border: none;
   color: #eeeeee;
+  width: 12rem;
 }
 
 .submit-btn:hover {
@@ -180,6 +210,7 @@ a {
   max-width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: .5rem;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -193,6 +224,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d8d8d8;
+  border: 1px solid #8a8a8a;
+  padding: .5rem;
 }
 
 .footer-link:hover {
