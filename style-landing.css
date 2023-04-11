@@ -1,12 +1,12 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  color: #575757;
-  background-image: url(./images/eiffel-tower-blk-wht.jpg);
+  color: #949494;
+  background-image: url(./images/person-bench.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #eeeeee;
+  height: 100vh;
   position: relative;
   max-width: 100%;
 }
@@ -18,118 +18,110 @@ body {
 }
 
 a {
-  color: #575757;
+  color: #949494;
   text-decoration: none;
 }
 
 /*------------- header/navbar  ----------------------*/
 .header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  margin: 0px auto;
-  background-color: #eeeeeece;
-}
-
-.header-nav {
-  width: 80%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-top: 1rem;
-}
-
-#dropdownMenuButton {
-  color: #575757;
-  background: transparent;
-  border: none;
-  text-decoration: underline;
+  width: 100%;
+  height: 4rem;
+  display: none;
 }
 
 /*------------- landing page ----------------------*/
 .landing-page-container {
+  margin-top: 2rem;
+}
+
+.img-titles {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0rem 2rem 2rem;
-  background-color: #eeeeeece;
-}
-
-.landing-page-main-title {
-  text-align: center;
-  width: 90%;
-  font-weight: 300;
-  font-size: 2.5rem;
-  margin-top: 1rem;
-}
-
-@media(max-width:480px) {
-  .landing-page-main-title {
-    font-size: 1.5rem;
-  }
-}
-
-.landing-page-title-bold {
-  font-weight: 500;
-}
-
-.landing-page-title-blue-bold {
-  font-weight: 500;
-  color: steelblue;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 .landing-page-main-logo {
-  width: 50%;
-  max-height: 50%;
+  width: 24.5rem;
 }
 
-@media(max-width: 480px) {
-  .landing-page-main-logo {
-    width: 80%;
-    margin: 2rem 0rem
-  }
+.titles {
+  margin-top: 5rem;
+  margin-right: 3rem;
+
+}
+
+.landing-page-main-title {
+  margin-bottom: 1.5rem;
+  margin-left: -3rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.landing-page-title-blue-accent {
+  color: steelblue;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.landing-page-main-title-line-two {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.landing-page-title-gray-accent {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #7a7a7a;
+}
+
+.landing-page-links-container {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.landing-page-subtitle {
+  color: #484848;
+  font-weight: 500;
+  margin-bottom: .1rem;
 }
 
 .landing-page-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.landing-page-link-one {
+  color: #eeeeee;
+  padding: 1.5rem .6rem;
+  background-color: steelblue;
+  border-radius: 10px
 }
 
 .landing-page-link {
-  color: #8a8a8a;
-  background-color: #e0e0e0;
-  text-align: center;
-  border: 3px solid whitesmoke;
+  color: #eeeeee;
   padding: 1.5rem 1rem;
+  background-color: steelblue;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 2px gray;
-  text-decoration: none;
 }
 
-.landing-page-link:hover {
-  color: #e0e0e0;
-  background-color: #8a8a8a;
-  box-shadow: inset 1px 1px 3px 2px rgb(65, 65, 65);
+.landing-page-link-one,
+.landing-page-link {
+  box-shadow: #7a7a7a 3px 3px 5px 3px;
 }
 
-/*------------------- footer ------------------------*/
+/*------ footer --------------------*/
+
 .footer-container {
-  text-align: center;
-  max-width: 100%;
-  margin: 0px auto;
-  padding: 0.7rem 0rem 0.5rem 0rem;
-  background-color: #eeeeeece;
-}
-
-.footer-copyright {
-  font-size: .7rem;
-}
-
-@media(max-width:480px) {
-  .footer-copyright {
-    font-size: .5rem;
-  }
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 2rem;
+  font-size: 0.7rem;
 }
