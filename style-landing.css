@@ -37,40 +37,38 @@ a {
 .img-titles {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem 2rem;
 }
 
 .landing-page-main-logo {
-  width: 24.5rem;
+  width: 23rem;
 }
 
 .titles {
-  margin-top: 5rem;
-  margin-right: 3rem;
-
+  margin-top: 7rem;
+  margin-left: 8rem;
 }
 
 .landing-page-main-title {
-  margin-bottom: 1.5rem;
-  margin-left: -3rem;
+  margin-bottom: 1rem;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .landing-page-title-blue-accent {
   color: steelblue;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
 }
 
 .landing-page-main-title-line-two {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  margin-left: 3rem;
 }
 
 .landing-page-title-gray-accent {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: #7a7a7a;
 }
