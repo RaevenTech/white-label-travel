@@ -4,11 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="./curious.css">
   <title>White Label Travel</title>
 </head>
 <body>
+  <nav class="mobile-nav">
+    <!-- header dropdown for mobile -->
+    <div class="btn-group dropstart">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropstart
+      </button>
+      <ul class="dropdown-menu">
+        <li class="list-item"><a href="../index.html" class="list-item-link"></a>Login</li>
+        <li class="list-item"><a href="./agents.css" class="list-item-link"></a>Agents</li>
+        <li class="list-item"><a href="./hotels.html" class="list-item-link"></a>Hotels</li>
+        <li class="list-item"><a href="./become-agent.html" class="list-item-link"></a>Become an agent</li>
+      </ul>
+    </div>
+    </div>
+  </nav>
   <img class="page-logo" src="../images/white-logo-no-bg.png" alt="White label travel logo">
   <main class="main-wrapper">
     <div class="first-container">
@@ -29,13 +46,17 @@
       <div class="page-content">
         <h1 class="content-title">PAGE CONTENT</h1>
       </div>
-      <div class="page-links">
-        <a class="page-link link-home"  href="../index.html">home</a>
-        <a class="page-link" href="./aboutUs.html">about us</a>
-        <a class="page-link" href="./team.html">the team</a>
-        <a class="link-red" href="./become-agent.html">become an agent</a>
-        <a class="page-link-sm" href="./agents.html">agents</a>
-        <a class="page-link-sm" href="./hotels.html">hotels</a>
+      <div class="page-links-container">
+        <div class="page-links-one">
+          <a class="page-link-lg link-home"  href="../index.html">home</a>
+          <a class="page-link-lg about-link" href="./aboutUs.html">about us</a>
+          <a class="page-link-lg team-link" href="./team.html">the team</a>
+        </div>
+        <div class="page-links-two">
+          <a class=" page-link-sm link-red" href="./become-agent.html">become an agent</a>
+          <a class="page-link-sm agents-link" href="./agents.html">agents</a>
+          <a class="page-link-sm hotels-link" href="./hotels.html">hotels</a>
+        </div>
       </div>
     </div>
   </main>
@@ -45,5 +66,7 @@
   </footer>
   <!-- JavaScript -->
   <script src="./script.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

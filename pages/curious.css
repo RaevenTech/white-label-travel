@@ -14,6 +14,7 @@ body {
   }
 }
 
+
 a {
   color: #575757;
   text-decoration: none;
@@ -21,6 +22,16 @@ a {
 
 
 /*------------- curiosity page ----------------------*/
+.mobile-nav {}
+
+@media(max-width:480px) {
+  .mobile-nav {
+    width: 100%;
+    height: 2rem;
+    background-color: blue;
+  }
+}
+
 .page-logo {
   width: 19.5rem;
   position: absolute;
@@ -144,44 +155,66 @@ a {
   text-decoration: 2px underline;
 }
 
-.page-links {
+.page-links-container {
   display: flex;
-  align-items: flex-start;
+  max-width: 100%;
+  border: 2px green solid;
+}
+
+.page-links-one a,
+.page-links-two a {
+  color: white;
+}
+
+.page-links-one {
+  width: 50%;
+  border: 2px rgb(215, 238, 6) solid;
+  display: flex;
   justify-content: space-between;
-  margin-top: 1.5rem;
 }
 
-.page-link {
-  color: white;
-  padding: 1.5rem .5rem;
+@media(max-width:480px) {
+  .page-links-one {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.page-link-lg {
   background-color: steelblue;
-  text-align: center;
+  padding: 1rem 1rem;
   border-radius: 10px;
+  text-align: center;
 }
 
-.link-home {
-  padding: 1.5rem 1rem;
+.about-link {
+  padding: 1rem .5rem;
 }
 
-.page-link-sm {
-  color: white;
-  width: 3rem;
-  padding: 1.25rem .5rem;
-  background-color: steelblue;
-  text-align: center;
-  border-radius: 10px;
-  font-size: .8rem;
+.team-link {
+  padding: 1rem .5rem;
 }
 
-.link-red {
-  color: white;
-  width: 3rem;
-  padding: .2rem .5rem;
-  background-color: red;
-  text-align: center;
-  border-radius: 10px;
-  font-size: .8rem;
+@media(max-width:480px) {
+  .page-link-lg {
+    margin-top: 1rem;
+  }
 }
+
+.page-links-two {
+  width: 50%;
+  border: 2px rgb(128, 0, 98) solid;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media(max-width:480px) {
+  .page-links-two {
+    display: none;
+  }
+}
+
 
 /*------------------- footer ------------------------*/
 .footer-container {
@@ -197,4 +230,16 @@ a {
   position: absolute;
   bottom: 0rem;
   left: 1rem;
+}
+
+@media(max-width:480px) {
+  .footer-copyright {
+    width: 100%;
+    font-size: .5rem;
+    color: #8a8a8a;
+    padding-left: 1rem;
+    position: fixed;
+    bottom: 0rem;
+    left: 0rem;
+  }
 }
