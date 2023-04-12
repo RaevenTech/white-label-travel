@@ -2,11 +2,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #eeeeee;
-  background-image: url();
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.99;
+  background: rgb(26, 63, 84);
+  background: linear-gradient(90deg, rgba(26, 63, 84, 1) 45%, rgba(55, 106, 136, 1) 63%, rgba(85, 135, 163, 1) 80%, rgba(113, 137, 150, 1) 92%, rgba(172, 172, 172, 1) 100%);
   position: relative;
   max-width: 100%;
 }
@@ -22,238 +19,169 @@ a {
   text-decoration: none;
 }
 
-/*------------- header/navbar  ----------------------*/
 
-
-
-/*------------- info page ----------------------*/
-.page-wrapper {
-  display: flex;
-  background: rgb(36, 90, 121);
-  background: linear-gradient(90deg, rgba(36, 90, 121, 1) 43%, rgba(55, 106, 136, 1) 73%, rgba(85, 135, 163, 1) 89%, rgba(113, 137, 150, 1) 97%, rgba(134, 134, 134, 1) 100%);
+/*------------- curiosity page ----------------------*/
+.page-logo {
+  width: 19.5rem;
+  position: absolute;
+  top: .5rem;
+  left: 4rem;
+  z-index: 2;
 }
 
 @media(max-width:480px) {
-  .page-wrapper {
-    max-width: 90% margin: 0px auto;
-    justify-content: center;
+  .page-logo {
+    position: relative;
+    width: 15rem;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.first-container {
+  max-width: 35%;
+}
+
+@media(max-width:480px) {
+  .first-container {
+    display: none;
   }
 }
 
 .main-img {
-  max-width: 40%;
-  margin-left: -5rem;
-}
-
-@media(max-width:480px) {
-  .main-img {
-    display: none;
-    margin-left: 0rem;
-  }
-}
-
-.wlt-logo {
-  position: absolute;
-  top: 0;
-  left: 1rem;
-  width: 26rem;
-}
-
-@media(max-width:480px) {
-  .wlt-logo {
-    position: relative;
-    width: 2rem;
-    object-fit: contain;
-  }
-}
-
-.nyc-img {
+  display: block;
   object-fit: cover;
-  height: 100%;
+  opacity: .6;
   width: 100%;
+  height: 100vh;
+}
+
+.second-container {
+  max-width: 65%;
 }
 
 @media(max-width:480px) {
-  .nyc-img {
-    display: none;
+  .second-container {
+    max-width: 90%;
+    margin: 0px auto;
   }
 }
 
-.curious-main-container {
-  max-width: 60%;
-  padding: .5rem .5rem;
-}
-
-@media(max-width:480px) {
-  .curious-main-container {
-    padding: 1rem 0rem;
-  }
-}
-
-.curious-main-title-container {
+.quote-hashtag {
   display: flex;
-  max-width: 90%;
-  gap: 0.5rem;
+  flex-direction: column;
+  justify-items: center;
+  padding-left: .5rem;
+}
+
+.page-quote {
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 @media(max-width:480px) {
-  .curious-main-title-container {
-    flex-direction: column;
-  }
-}
-
-.curious-main-title {
-  font-size: 3rem;
-  font-weight: 300;
-  text-shadow: 3px 3px 5px 2px black;
-  color: #eeeeee;
-  margin-bottom: 40px;
-  margin: 0rem;
-}
-
-@media(max-width:480px) {
-  .curious-main-title {
-    margin: 0rem;
+  .page-quote {
+    font-size: 2rem;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
-.how-it-works-accent {
-  color: steelblue;
-}
-
-.curious-hashtag-container {
+.hashtag {
+  margin-top: 0rem;
   display: flex;
+  font-weight: 300;
 }
 
-.curious-hashtag {
-  font-size: 1.5rem;
-  text-shadow: 3px 3px 5px 5px black;
-}
-
-.hashtag-violet {
-  color: violet;
+@media(max-width:480px) {
+  .hashtag {
+    font-size: 1rem;
+    margin: 0rem auto;
+    margin-bottom: .5rem;
+  }
 }
 
 .hashtag-gold {
-  color: gold;
+  color: goldenrod;
 }
 
-.hashtag-orange {
-  color: orangered;
+.hashtag-red {
+  color: red;
+}
+
+.hashtag-gray {
+  color: lightslategrey;
+}
+
+.hashtag-blue {
+  color: steelblue;
+}
+
+.hashtag-fuschia {
+  color: fuchsia;
 }
 
 .hashtag-green {
   color: lawngreen;
 }
 
-.hashtag-blue {
-  color: cornflowerblue;
-}
-
-.hashtag-pink {
-  color: fuchsia;
-}
-
-.how-it-all-works {
-  color: #575757;
-  max-width: 100%;
-  margin: 2rem auto;
-  padding: 2.2rem;
-  border: 3px solid #ccc;
-  background-color: #eeeeeed2;
-  line-height: 1.8rem;
+.page-content {
+  max-width: 90%;
+  margin: 0px auto;
+  border: 2px solid rgba(255, 255, 255, 0.297);
   border-radius: 10px;
-
+  height: 65%;
 }
 
-@media(max-width:480px) {
-  .how-it-all-works {
-    padding: 1rem;
-    max-width: 90%;
-  }
-}
-
-.page-btn-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  padding: 0rem 1.5rem;
-}
-
-@media(max-width:480px) {
-  .page-btn-links {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    padding: 0rem 1.5rem;
-  }
-}
-
-.agent-registration-link-btn {
-  width: fit-content;
-  padding: 0.3rem 2rem;
-  background-color: steelblue;
-  color: #eeeeee;
-  border-radius: 10px;
-}
-
-.contact-link-btn {
-  width: fit-content;
-  padding: 0.3rem 2rem;
-  background-color: green;
-  color: #eeeeee;
-  border-radius: 10px;
+.content-title {
+  color: #eeeeee55;
+  text-align: center;
+  text-decoration: 2px underline;
 }
 
 .page-links {
-  max-width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 2rem;
-}
-
-
-.page-link-one {
-  width: 3rem;
-  padding: 1rem;
-  color: whitesmoke;
-  border-radius: 10px;
-  background-color: rgb(27, 59, 86);
-  text-align: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 .page-link {
-  width: 2.5rem;
-  font-size: .7rem;
-  line-height: 1rem;
-  padding: 1rem 0.5rem;
-  color: whitesmoke;
-  border-radius: 10px;
-  background-color: rgb(27, 59, 86);
+  color: white;
+  padding: 1.5rem .5rem;
+  background-color: steelblue;
   text-align: center;
+  border-radius: 10px;
 }
 
-.home-link,
-.about-link {
-  padding: 1.6rem 0.9rem;
+.link-home {
+  padding: 1.5rem 1rem;
 }
 
-.agents-link,
-.hotels-link {
-  padding: 1.3rem 0.8rem;
+.page-link-sm {
+  color: white;
+  width: 3rem;
+  padding: 1.25rem .5rem;
+  background-color: steelblue;
+  text-align: center;
+  border-radius: 10px;
+  font-size: .8rem;
 }
 
-.become-agent-link {
-  padding: 0.3rem 0.8rem;
+.link-red {
+  color: white;
+  width: 3rem;
+  padding: .2rem .5rem;
   background-color: red;
+  text-align: center;
+  border-radius: 10px;
+  font-size: .8rem;
 }
-
-@media(max-width:480px) {}
-
 
 /*------------------- footer ------------------------*/
 .footer-container {
@@ -265,7 +193,7 @@ a {
   width: 40%;
   font-size: .7rem;
   color: #8a8a8a;
-  padding-left: 2rem;
+  padding-left: 1rem;
   position: absolute;
   bottom: 0rem;
   left: 1rem;
