@@ -21,16 +21,11 @@ a {
 }
 
 
-/*------------- curiosity page ----------------------*/
-.mobile-nav {}
+/*------------- header nav page ----------------------*/
 
-@media(max-width:480px) {
-  .mobile-nav {
-    width: 100%;
-    height: 2rem;
-    background-color: blue;
-  }
-}
+
+/*------------- curiosity page ----------------------*/
+
 
 .page-logo {
   width: 19.5rem;
@@ -42,8 +37,13 @@ a {
 
 @media(max-width:480px) {
   .page-logo {
-    position: relative;
-    width: 15rem;
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  .page-logo {
+    width: 12rem;
   }
 }
 
@@ -80,6 +80,36 @@ a {
   }
 }
 
+/*-- navigaion hamburger menu --*/
+@media(min-width:1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media(min-width:768px) {
+  .wlt-logo {
+    display: none;
+  }
+}
+
+@media(max-width:480px) {
+  .wlt-logo {
+    font-size: 1rem;
+  }
+}
+
+.nav-menu-container {
+  background: transparent;
+}
+
+.hamburger-icon {
+  color: white;
+}
+
+/*-- navigaion hamburger menu End --*/
+
+
 .quote-hashtag {
   display: flex;
   flex-direction: column;
@@ -98,8 +128,25 @@ a {
   .page-quote {
     font-size: 2rem;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+  }
+}
+
+@media(min-width:760px) {
+  .page-quote {
+    margin-top: 0rem;
+
+  }
+}
+
+
+@media(max-width:768px) {
+  .page-quote {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -113,7 +160,15 @@ a {
   .hashtag {
     font-size: 1rem;
     margin: 0rem auto;
-    margin-bottom: .5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media(max-width:768px) {
+  .hashtag {
+    font-size: 1.5rem;
+    margin: 0rem auto;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -149,6 +204,12 @@ a {
   height: 65%;
 }
 
+@media(max-width:480px) {
+  .page-content {
+    height: 100%;
+  }
+}
+
 .content-title {
   color: #eeeeee55;
   text-align: center;
@@ -158,7 +219,8 @@ a {
 .page-links-container {
   display: flex;
   max-width: 100%;
-  border: 2px green solid;
+  gap: 4rem;
+  margin-top: 2rem;
 }
 
 .page-links-one a,
@@ -168,9 +230,9 @@ a {
 
 .page-links-one {
   width: 50%;
-  border: 2px rgb(215, 238, 6) solid;
   display: flex;
   justify-content: space-between;
+  align-items: start;
 }
 
 @media(max-width:480px) {
@@ -180,33 +242,47 @@ a {
   }
 }
 
+@media(max-width:768px) {
+  .page-links-one {
+    width: 100%;
+    padding: 0rem 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
 .page-link-lg {
   background-color: steelblue;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 10px;
   text-align: center;
 }
 
+.page-link-lg,
+.page-link-sm {
+  box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
 .about-link {
-  padding: 1rem .5rem;
+  padding: 1.5rem .5rem;
 }
 
 .team-link {
-  padding: 1rem .5rem;
+  padding: 1.5rem .4rem;
 }
 
 @media(max-width:480px) {
   .page-link-lg {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
 .page-links-two {
   width: 50%;
-  border: 2px rgb(128, 0, 98) solid;
   display: flex;
   justify-content: space-between;
-
+  align-items: start;
+  padding-left: 1rem;
 }
 
 @media(max-width:480px) {
@@ -215,16 +291,43 @@ a {
   }
 }
 
+@media(max-width:768px) {
+  .page-links-two {
+    display: none
+  }
+}
+
+.page-link-sm {
+  font-size: .8rem;
+  padding: .5rem .5rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.link-red {
+  background-color: red;
+  line-height: .8rem;
+  border-radius: 10px;
+}
+
+.agents-link,
+.hotels-link {
+  padding: 1.15rem 0.5rem;
+  background-color: steelblue;
+  border-radius: 10px;
+}
+
 
 /*------------------- footer ------------------------*/
 .footer-container {
   text-align: start;
   max-width: 100%;
+  position: relative;
 }
 
 .footer-copyright {
   width: 40%;
-  font-size: .7rem;
+  font-size: .5rem;
   color: #8a8a8a;
   padding-left: 1rem;
   position: absolute;
@@ -234,12 +337,6 @@ a {
 
 @media(max-width:480px) {
   .footer-copyright {
-    width: 100%;
-    font-size: .5rem;
-    color: #8a8a8a;
-    padding-left: 1rem;
-    position: fixed;
-    bottom: 0rem;
-    left: 0rem;
+    display: none;
   }
 }
