@@ -103,8 +103,18 @@ a {
   background: transparent;
 }
 
-.hamburger-icon {
-  color: white;
+.nav-link:hover,
+.nav-item:hover {
+  background-color: #57575737;
+  color: #575757;
+}
+
+.nav-link-red {
+  color: goldenrod;
+}
+
+.nav-link-red:hover {
+  color: red;
 }
 
 /*-- navigaion hamburger menu End --*/
@@ -299,14 +309,14 @@ a {
 
 .page-link-sm {
   font-size: .8rem;
-  padding: .5rem .5rem;
+  padding: .5rem .7rem;
   text-align: center;
   width: 4rem;
 }
 
 .link-red {
   background-color: red;
-  line-height: .8rem;
+  line-height: .85rem;
   border-radius: 10px;
 }
 
