@@ -19,6 +19,14 @@ a {
 }
 
 /*------------- about us  ----------------------*/
-.main-wrapper {
-  display: flex;
+@media(max-width:480px) {
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
+  }
+
+  .left-container {
+    display: none;
+  }
 }
