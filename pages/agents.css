@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border: 1px solid red;
+
   box-sizing: border-box;
 }
 
@@ -25,39 +25,158 @@ a {
   text-decoration: none;
 }
 
-/*------------- header/navbar  ----------------------*/
+/*------------- agents page ----------------------*/
+
+/*------------- mobile navbar  ----------------------*/
 
 
+/*------------- PC main layout  ----------------------*/
+.mobile-nav {
+  display: none;
+}
 
-/*------------- About us page ----------------------*/
+.hashtag-green {
+  color: green;
+}
+
+.hashtag-red {
+  color: red;
+}
+
+.hashtag-gray {
+  color: gray;
+}
+
+/*------------- mobile layout ----------------------*/
+@media(max-width:480px) {
+  body {
+    background: #040716;
+    background-image: url("../images/secret-agent.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+
+  }
+
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0px auto;
+
+  }
+
+  .mobile-nav {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    width: 4rem;
+  }
+
+  .back-btn {
+    color: #8a8a8a;
+  }
+
+  .back-btn:hover {
+    color: #e6e6e6;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0rem;
+    letter-spacing: -1px;
+  }
+
+  .hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .page-content {}
+
+  .content-title {
+    text-decoration: underline;
+    font-weight: 300;
+    text-align: center;
+    height: 25rem;
+
+  }
+
+  .page-link-btns {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .page-link-btn {
+    background-color: #2F5496;
+    color: #e6e6e6;
+    padding: 1.2rem .5rem;
+    border-radius: 10px;
+    font-size: .8rem;
+  }
+
+  .page-link-btn:hover {
+    background-color: #3769c0;
+  }
+
+  .home-btn {
+    padding: 1.2rem .9rem;
+  }
+
+  .hotels-btn {
+    padding: 1.2rem .9rem;
+  }
+
+}
 
 
 
 
 /*------------------- footer ------------------------*/
+
+
 .footer-wrapper {
   width: 100%;
-  border-top: 1px solid #8a8a8a;
+  padding-bottom: .3rem;
+  margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
 }
 
-.footer-copyright {
-  font-size: .7rem;
-  text-align: center;
-  color: #8a8a8a;
-  padding-left: 1rem;
-}
-
+.footer-copyright,
 .footer-policies {
   font-size: .7rem;
   text-align: center;
   color: #8a8a8a;
+  padding-right: 1rem;
+}
+
+.footer-policies {
   padding-left: 1rem;
 }
 
 .terms-conditions-link {
   color: #8a8a8a;
-  padding-right: 1rem;
+}
+
+@media(max-width:480px) {
+
+  .footer-copyright,
+  .footer-policies {
+    font-size: .5rem;
+  }
 }
