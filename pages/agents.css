@@ -42,20 +42,17 @@ a {
 }
 
 /*------------- PC main layout  ----------------------*/
-@media(min-width:768px) {
+@media(min-width:1024px) {
   .main-wrapper {
     max-width: 100%;
-    border: 1px solid red;
   }
 
   .main-container {
     display: flex;
-    border: 1px solid blue;
   }
 
   .image-logo {
     max-width: 40%;
-    border: 1px solid greenyellow;
     position: relative;
   }
 
@@ -72,7 +69,8 @@ a {
   }
 
   .main-content {
-    max-width: 60%;
+    width: 60%;
+    position: relative;
   }
 
   .title-hashtag-container {
@@ -93,36 +91,121 @@ a {
     margin: 0rem;
   }
 
+  .page-content {
+    width: 90%;
+    margin: 0rem auto;
+    opacity: .5;
+    text-align: center;
+    height: 70vh;
+  }
 
+  .page-link-btns {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
 
+  }
 
+  .page-link-btn {
+    background-color: #2F5496;
+    color: #e6e6e6;
+    padding: 1.5rem .5rem;
+    border-radius: 10px;
+  }
 
+  .home-btn {
+    padding: 1.45rem .9rem;
+  }
+
+  .hotels-btn {
+    padding: 1.45rem .9rem;
+  }
 
 }
 
 /*------------- tablet layout ----------------------*/
-@media(max-width:768px) {
+@media(min-width:768px) {
+  .main-wrapper {
+    max-width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+  }
+
+  .image-logo {
+    max-width: 40%;
+    position: relative;
+  }
+
   .main-img-logo {
     position: absolute;
     top: 0.5rem;
     left: 1.5rem;
-    width: 7rem;
+    width: 9rem;
+  }
+
+  .main-img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .main-content {
+    width: 60%;
+    position: relative;
   }
 
   .title-hashtag-container {
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
 
   .main-title {
-    font-size: 2.5rem;
-    margin: .5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 1rem;
   }
-}
 
-.hashtag {
-  padding-left: .5rem;
+  .hashtag {
+    display: flex;
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin: 0rem;
+  }
+
+  .page-content {
+    width: 90%;
+    margin: 0rem auto;
+    opacity: .5;
+    text-align: center;
+    height: 70vh;
+  }
+
+  .page-link-btns {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+
+  }
+
+  .page-link-btn {
+    background-color: #2F5496;
+    color: #e6e6e6;
+    padding: 1.5rem .5rem;
+    border-radius: 10px;
+  }
+
+  .home-btn {
+    padding: 1.45rem .9rem;
+  }
+
+  .hotels-btn {
+    padding: 1.45rem .9rem;
+  }
 }
 
 /*------------- mobile layout ----------------------*/
@@ -133,11 +216,12 @@ a {
 
   body {
     background: #040716;
-    background-image: url("");
+    background-image: url("../images/secret-agent.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
+    max-width: 100%;
   }
 
   .main-wrapper {
@@ -145,7 +229,6 @@ a {
     flex-direction: column;
     max-width: 90%;
     margin: 0px auto;
-
   }
 
   .mobile-nav {
@@ -167,8 +250,15 @@ a {
     color: #e6e6e6;
   }
 
+  .title-hashtag-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .main-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 400;
     text-align: center;
     margin: 0rem;
@@ -218,19 +308,15 @@ a {
   .hotels-btn {
     padding: 1.2rem .9rem;
   }
-
 }
 
 /*------------------- footer ------------------------*/
 
-
 .footer-wrapper {
   width: 100%;
   padding-bottom: .3rem;
-  margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
-
 }
 
 .footer-copyright,
@@ -239,6 +325,7 @@ a {
   text-align: center;
   color: #8a8a8a;
   padding-right: 1rem;
+  margin: 0rem;
 }
 
 .footer-policies {
@@ -250,9 +337,19 @@ a {
 }
 
 @media(max-width:480px) {
+  .footer-wrapper {
+    margin-top: 0.5rem;
+  }
 
   .footer-copyright,
   .footer-policies {
     font-size: .5rem;
+  }
+}
+
+@media(min-width:1024px) {
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
   }
 }
