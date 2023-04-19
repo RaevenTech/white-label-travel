@@ -2,12 +2,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #949494;
-  background-image: url(./images/person-bench.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   position: relative;
+  border: 1px solid red;
+  font-size: 16px;
   max-width: 100%;
 }
 
@@ -22,118 +19,28 @@ a {
   text-decoration: none;
 }
 
-/*------------- header/navbar  ----------------------*/
-.header-container {
-  width: 100%;
-  height: 4rem;
-  display: none;
-}
-
-/*------------- landing page ----------------------*/
-.landing-page-container {
-  margin-top: 2rem;
-}
-
-.img-titles {
-  display: flex;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-@media(min-width:1280px) {
-  .img-titles {
-    justify-content: space-between;
-    margin-right: 3rem;
-  }
-}
-
-@media(min-width:1444px) {
-  .img-titles {
-    justify-content: space-around;
-  }
-}
-
-.landing-page-main-logo {
-  width: 23rem;
-}
-
-.titles {
-  margin-top: 7rem;
-  margin-left: 8rem;
-}
-
-@media(min-width:1280px) {
-  .titles {
-    margin-right: 7rem;
-  }
-}
-
-
-
-
-.landing-page-main-title {
-  margin-bottom: 1rem;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
-.landing-page-title-blue-accent {
-  color: steelblue;
-  font-size: 2.5rem;
+/*------------- global styling ----------------------*/
+.title-blue-accent {
+  color: #0070C0;
   font-weight: 500;
 }
 
-.landing-page-main-title-line-two {
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-left: 3rem;
-}
-
-.landing-page-title-gray-accent {
-  font-size: 2.5rem;
+.title-gray-accent {
+  color: #50595C;
   font-weight: 500;
-  color: #7a7a7a;
 }
 
-.landing-page-links-container {
-  width: 90%;
-  margin: 0px auto;
-  text-align: center;
-  margin-top: 10rem;
-}
+/*-------- mobile layout ---------*/
 
-.landing-page-subtitle {
-  color: #484848;
-  font-weight: 500;
-  margin-bottom: .1rem;
-}
+@media(max-width:480px) {}
 
-.landing-page-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
 
-.landing-page-link-one {
-  color: #eeeeee;
-  padding: 1.5rem .6rem;
-  background-color: steelblue;
-  border-radius: 10px
-}
+/*-------- tablet layout ---------*/
+@media(min-width:768px) {}
 
-.landing-page-link {
-  color: #eeeeee;
-  padding: 1.5rem 1rem;
-  background-color: steelblue;
-  border-radius: 10px;
-}
+/*-------- PC layout ---------*/
+@media(min-width:1024px) {}
 
-.landing-page-link-one,
-.landing-page-link {
-  box-shadow: #7a7a7a 3px 3px 5px 3px;
-}
 
 /*------ footer --------------------*/
 
@@ -144,4 +51,37 @@ a {
   right: 0;
   padding-right: 2rem;
   font-size: 0.7rem;
+}
+
+@media(max-width:480px) {
+  .footer-container {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 2rem;
+    font-size: 0.5rem;
+  }
+}
+
+@media(max-width:768px) {
+  .footer-container {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 2rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media(min-width:1024px) {
+  .footer-container {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 2rem;
+    font-size: 0.7rem;
+  }
 }
