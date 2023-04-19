@@ -71,6 +71,9 @@ a {
   .main-content {
     width: 60%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .title-hashtag-container {
@@ -96,7 +99,7 @@ a {
     margin: 0rem auto;
     opacity: .5;
     text-align: center;
-    height: 70vh;
+    height: 90vh;
   }
 
   .page-link-btns {
@@ -104,7 +107,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 0;
+    margin: 3rem 0rem;
 
   }
 
@@ -113,6 +116,7 @@ a {
     color: #e6e6e6;
     padding: 1.5rem .5rem;
     border-radius: 10px;
+    margin-bottom: 1rem;
   }
 
   .home-btn {
@@ -180,16 +184,21 @@ a {
     margin: 0rem auto;
     opacity: .5;
     text-align: center;
-    height: 70vh;
+    height: 60vh;
+  }
+
+  @media(min-width:1280px) {
+    .page.page-content {
+      height: 1000px;
+    }
   }
 
   .page-link-btns {
-    width: 45%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem 0;
-
+    margin: 1rem 0;
   }
 
   .page-link-btn {
