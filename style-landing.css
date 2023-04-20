@@ -4,8 +4,8 @@ body {
   color: #949494;
   position: relative;
   border: 1px solid red;
-  font-size: 16px;
   max-width: 100%;
+
 }
 
 @media(min-width:1280px) {
@@ -20,68 +20,175 @@ a {
 }
 
 /*------------- global styling ----------------------*/
-.title-blue-accent {
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/person-bench.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-titles {
+  display: flex;
+}
+
+.logo-container {
+  width: 50%;
+  border: 1px solid rgb(13, 0, 255);
+}
+
+.logo {
+  max-width: 25rem;
+  object-fit: contain;
+  margin-left: 1rem;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 3rem;
+  width: 50%;
+  border: 1px solid rgb(0, 255, 85);
+}
+
+.title {
+  font-weight: 400;
+  font-size: 1.75rem;
+  padding-left: 1rem;
+
+}
+
+.second-title {
+  padding-left: 3.5rem;
+}
+
+.title-blue-accent,
+.title-gray-accent {
   color: #0070C0;
   font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .title-gray-accent {
   color: #50595C;
-  font-weight: 500;
 }
 
-/*-------- mobile layout ---------*/
+.subtitle-links {
+  margin-bottom: 2rem;
+}
 
-@media(max-width:480px) {}
+.subtitle {
+  text-align: center;
+  color: darkslategrey;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 
+.link-btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 
-/*-------- tablet layout ---------*/
-@media(min-width:768px) {}
+.link-btn {
+  color: whitesmoke;
+  background-color: #0070C0;
+  padding: 1.5rem 1.5rem;
+  border-radius: 10px;
+}
 
-/*-------- PC layout ---------*/
-@media(min-width:1024px) {}
-
+.curious-link {
+  padding: 1.5rem 1.1rem;
+}
 
 /*------ footer --------------------*/
 
+
+
 .footer-container {
-  background-color: transparent;
+  display: flex;
+}
+
+p {
+  margin-bottom: 0rem;
+  font-size: .7rem;
+}
+
+.footer-terms {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 2rem;
-  font-size: 0.7rem;
+  bottom: 0.1rem;
+  left: 01rem;
 }
 
+.footer-copyright {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 01rem;
+}
+
+/*-------- mobile layout ---------*/
 @media(max-width:480px) {
-  .footer-container {
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 2rem;
-    font-size: 0.5rem;
+  .logo-container {
+    display: none;
   }
+
+  .titles-container {
+    width: 90%;
+    margin: 0rem auto;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .second-title {
+    padding-left: 0rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .link-btn {
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .curious-link {
+    padding: 1.5rem 1.1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-terms,
+  .footer-copyright {
+    font-size: .5rem;
+    position: relative;
+    text-align: center;
+  }
+
+
 }
 
+
+/*-------- tablet layout ---------*/
 @media(max-width:768px) {
-  .footer-container {
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 2rem;
-    font-size: 0.6rem;
+  .mobile-nav {
+    display: none;
   }
 }
 
+/*-------- PC layout ---------*/
 @media(min-width:1024px) {
-  .footer-container {
-    background-color: transparent;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 2rem;
-    font-size: 0.7rem;
+  .mobile-nav {
+    display: none;
   }
+
 }
