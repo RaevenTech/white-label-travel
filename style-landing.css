@@ -121,13 +121,13 @@ p {
 .footer-terms {
   position: absolute;
   bottom: 0.1rem;
-  left: 01rem;
+  left: 0.1rem;
 }
 
 .footer-copyright {
   position: absolute;
   bottom: 0.1rem;
-  right: 01rem;
+  right: 0.1rem;
 }
 
 /*-------- mobile layout ---------*/
