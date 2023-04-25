@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  color: #e6e6e6;
+  color: whitesmoke;
   max-width: 100%;
   position: relative;
   box-sizing: border-box;
@@ -30,7 +30,6 @@ a {
 .left-side {
   width: 35%;
   height: 100vh;
-  border: greenyellow 1px solid;
 }
 
 .logo-container {
@@ -54,17 +53,67 @@ a {
 .img-container {
   width: 100%;
   height: 50%;
-
 }
-
-
-
-
 
 .right-side {
   width: 65%;
   border: red 1px solid;
 }
+
+.content-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: #00f0a0 1px solid;
+}
+
+.title-hashtag {
+  width: 100%;
+  display: flex;
+  margin-top: 1em;
+}
+
+.title,
+.hashtag {
+  font-weight: 400;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 0em;
+  letter-spacing: -1px;
+}
+
+.hashtag-container {
+  display: flex;
+  align-items: end;
+  margin-left: .6em;
+}
+
+.hashtag {
+  font-size: 1.4rem;
+  margin-bottom: 0.2em;
+}
+
+.tag-lightgreen {
+  color: #C4E0B2;
+  font-size: 1.5rem
+}
+
+.tag-gray {
+  color: #D5DBE5;
+}
+
+.tag-orange {
+  color: #F4B081;
+}
+
+.tag-blue {
+  color: #00B0F0;
+}
+
 
 .footer-container {
   display: flex;
@@ -90,6 +139,7 @@ a {
     width: 40%;
     margin: 0rem auto;
     padding-top: .5em;
+
   }
 
   .logo {
@@ -98,12 +148,74 @@ a {
 
   .right-side {
     width: 100%;
-    height: 50px;
     margin: 0rem auto;
     position: absolute;
-    top: 25%;
-
+    top: 0;
   }
+
+  .navbar-dark .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .navbar-dark .navbar-toggler:active {
+    border-color: transparent;
+  }
+
+  .navbar-toggler-icon {
+    color: whitesmoke !important;
+  }
+
+  div .navbar-nav {
+    background: #3d6197;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    box-shadow: inset 0px 0px 5px 3px lightblue;
+  }
+
+  .nav-link {
+    color: whitesmoke !important;
+  }
+
+  .register-link {
+    text-decoration: 1px underline;
+  }
+
+  .content-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: #00f0a0 1px solid;
+  }
+
+  .title-hashtag {
+    flex-direction: column;
+    border: #f08c00 1px solid;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .hashtag-container {
+    justify-content: end;
+    padding-right: 1em;
+  }
+
+  .hashtag {
+    font-size: 1rem;
+  }
+
+  .link-btns {
+    border: purple solid 1px;
+  }
+
+  .link-btns-lg {
+    display: none;
+  }
+
 
 
 
@@ -115,4 +227,8 @@ a {
 @media(max-width:768px) {}
 
 /*------------- PC ----------------------*/
-@media(min-width:1024px) {}
+@media(min-width:1024px) {
+  .mobile-nav {
+    display: none;
+  }
+}
