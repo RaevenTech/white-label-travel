@@ -114,6 +114,49 @@ a {
   color: #00B0F0;
 }
 
+.link-btns {
+  display: flex;
+}
+
+.link-btns-lg,
+.link-btns-sm {
+  margin: 3rem 0rem;
+}
+
+.link-btns-sm {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.link-lg,
+.link-sm {
+  background-color: #95254A;
+  margin-right: 2em;
+  border-radius: 10px;
+}
+
+.link-lg {
+  padding: 1.5rem 1.2rem;
+}
+
+.about-link {
+  padding: 1.5rem .5rem;
+}
+
+.link-sm {
+  padding: 1.25rem .8rem;
+  font-size: .7rem;
+  text-align: center;
+}
+
+.link-red {
+  background-color: red;
+  width: 10px;
+  text-align: center;
+  padding: 1.25rem .3rem;
+}
+
+
 
 .footer-container {
   display: flex;
@@ -136,7 +179,7 @@ a {
   }
 
   .logo-container {
-    width: 40%;
+    width: 10rem;
     margin: 0rem auto;
     padding-top: .5em;
 
@@ -144,6 +187,7 @@ a {
 
   .logo {
     width: 100%;
+    margin-top: .5em;
   }
 
   .right-side {
@@ -188,15 +232,18 @@ a {
     display: flex;
     flex-direction: column;
     border: #00f0a0 1px solid;
+
   }
 
   .title-hashtag {
+    margin-top: 10rem;
     flex-direction: column;
     border: #f08c00 1px solid;
   }
 
   .title {
     text-align: center;
+    margin-top: 1rem;
   }
 
   .hashtag-container {
@@ -209,26 +256,80 @@ a {
   }
 
   .link-btns {
-    border: purple solid 1px;
+    justify-content: center;
   }
 
   .link-btns-lg {
     display: none;
   }
 
+  .hotel-link {
+    margin-right: 0em;
+  }
 
 
 
+
+
+  .footer-container {
+    flex-direction: column;
+    font-size: .5rem;
+  }
+
+  .footer-terms,
+  .footer-copyright {
+    margin-bottom: .3rem;
+    text-align: center;
+    line-height: .5rem;
+  }
 
 
 }
 
 /*------------- tablet ----------------------*/
-@media(max-width:768px) {}
+@media(max-width:768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-terms,
+  .footer-copyright {
+    margin-bottom: .2rem;
+  }
+}
 
 /*------------- PC ----------------------*/
 @media(min-width:1024px) {
   .mobile-nav {
     display: none;
+  }
+
+
+
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .footer-terms,
+  .footer-copyright {
+    margin-bottom: .2rem;
+  }
+
+}
+
+@media(min-width:1440px) {
+  .logo {
+    max-width: 22em;
+    margin-left: 4em;
   }
 }
