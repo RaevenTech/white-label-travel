@@ -2,7 +2,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #575757;
-  opacity: 0.99;
   background-color: #E5EDFB;
   position: relative;
   width: 100%;
@@ -31,6 +30,7 @@ a {
 .left-side {
   width: 35%;
   height: 100vh;
+  position: relative;
 }
 
 .logo-container {
@@ -48,7 +48,8 @@ a {
 
 .img {
   height: 100%;
-  opacity: .9;
+  position: relative;
+
 }
 
 .img-container {
@@ -125,7 +126,48 @@ a {
 }
 
 .page-content {
-  width: 90%;
+  width: 95%;
+  margin: 0px auto;
+
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-left: .5em;
+  row-gap: .5em;
+}
+
+.member-card {
+  background-color: #F2F2F2;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-left: .3em;
+}
+
+.member-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-role {
+  color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2em;
+  margin-bottom: .2em;
+  z-index: 3;
+  text-shadow: 1px 1px 5px black;
+}
+
+.role {
+  text-shadow: 1px 1px 5px black;
+  color: goldenrod;
 }
 
 .link-btns-lg,
@@ -174,6 +216,12 @@ a {
   padding: .5rem .2rem;
 }
 
+.container-three {
+  background-color: #8399C2;
+}
+
+
+
 
 
 .footer-container {
@@ -204,6 +252,14 @@ a {
     z-index: 2;
   }
 
+  .navbar-nav {
+    background-color: #8399c2b1;
+  }
+
+  div .container-fluid {
+    padding: 0rem;
+  }
+
   .left-side {
     width: 100%;
     position: absolute;
@@ -211,25 +267,101 @@ a {
   }
 
   .logo-container {
-
     text-align: center;
   }
 
   .logo {
-    width: 10rem;
+    margin-top: -2rem;
+    width: 7rem;
   }
 
   .right-side {
-    width: 90%;
+    width: 95%;
     margin: 0px auto;
+    z-index: 2;
   }
 
+  .title-hashtag {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
 
+  .title {
+    text-align: center;
+    font-size: 2rem;
+  }
 
+  .hashtag-container {
+    justify-content: end;
+  }
 
+  .hashtag {
+    font-size: 1.25rem;
+  }
+
+  .page-content {
+    width: 100%;
+  }
+
+  .team-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 1em;
+  }
+
+  @media(max-width:320px) {
+    .team-container {
+      max-width: 100%;
+      padding-left: 0em;
+
+    }
+
+    .member-card {
+      width: 100%;
+      margin-left: .9em;
+    }
+
+    .link-btns-sm {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    .footer-wrapper {
+      margin-bottom: -3em;
+    }
+  }
+
+  .member-card {
+    width: 100%;
+    height: 200px;
+  }
+
+  .name-role,
+  .role {
+    font-size: .75rem;
+  }
+
+  .link-btns {
+    margin-bottom: 0rem;
+    justify-content: center;
+  }
+
+  .container-three {
+    margin-right: 0rem;
+  }
+
+  .link-btns-sm {
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-wrapper {
+    margin-bottom: -5em;
+  }
 
   .footer-container {
-    flex-direction: column;
+    flex-direction: flex;
+    justify-content: space-between;
     font-size: .5rem;
   }
 
@@ -245,6 +377,19 @@ a {
 
 /*------------- tablet ----------------------*/
 @media(max-width:768px) {
+
+  .member-card {
+    width: 125px;
+    height: 175px;
+  }
+
+  .link-lg {
+    margin-right: 1.5rem;
+  }
+
+  .hashtag-container {
+    margin-right: 4.5em;
+  }
 
   .footer-wrapper {
     position: absolute;
