@@ -4,68 +4,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fonts awesome -->
+  <script src="https://kit.fontawesome.com/bb40bb2e65.js" crossorigin="anonymous"></script>
   <!-- CSS -->
-  <link rel="stylesheet" href="./team.css">
-  <title>White Label Travel</title>
+  <link rel="stylesheet" href="team.css">
+  <title>White label Travel</title>
 </head>
 <body>
-  <header class="header-wrapper">
-    <div class="header-container">
-      <div class="header-txt-hashtag">
-        <h1 class="header-title"><span class="header-title-subtext">Not</span> just pretty faces</h1>
-        <div class="header-hashtag">
-          <span class="hashtag-lightslategray">#</span>
-          <span class="hashtag-steelblue">meet</span>
-          <span class="hashtag-goldenrod">the</span>
-          <span class="hashtag-violet">team</span>
-        </div>
-      </div>
-    </div>
-  </header>
-  
   <main class="main-wrapper">
-    <div class="team-container">
-      <h2 class="team-subtitle"> <span class="subtitle-accent">Team</span> members</h2>
-      <div class="team-members-cards">
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+
+    <section class="left-side">
+        <div class="logo-container">
+          <img class="logo" src="../images/gray-logo-no-bg.png" alt="white label travel logo">
         </div>
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+        <div class="img-container"> 
+          <img class="img" src="../images/lady-standing-b.png" alt="neon sign">
         </div>
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+    </section>
+
+    <section class="right-side">
+      <!-- navbar for mobile only -->
+      <div class="mobile-nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transperent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="../index.html">home</a>
+              <a class="nav-link" href="./aboutUs.html">about us</a>
+              <a class="nav-link register-link" href="./become-agent.html">become an agent</a>
+            </div>
+          </div>
         </div>
-      </div>  
-      <div class="team-members-cards">  
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+      </nav>
+    </div>
+      <!-- navbar for mobile only -->
+      <div class="content-container">
+        <div class="title-hashtag">
+          <div class="title-container">
+            <h1 class="title">not just pretty faces</h1>
+          </div>
+          <div class="hashtag-container">
+            <h2 class="hashtag tag-darkgray" >#</h2>
+            <h2 class="hashtag tag-blue" >meet</h2>
+            <h2 class="hashtag tag-orange" >the</h2>
+            <h2 class="hashtag tag-gray" >team</h2>
+          </div>
         </div>
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+
+        <div class="page-content">
+          <div class="team-container">
+            <div class="member-card">
+              <img class="member-img" src="" alt="team member and role">
+              <p class="subtitle"></p>
+            </div>
+          </div>
         </div>
-        <div class="team-member">
-          <img class="member-avatar" src="../images/avatar2.png" alt="team member avatar" >
-          <p class="member-name">Name, Position</p>
+
+        <div class="link-btns">
+          <div class="link-btns-lg">
+            <a class="link-lg" href="../index.html">home</a>
+            <a class="link-lg about-link" href="./aboutUs.html">about us</a>
+          </div>
+          <div class="link-btns-sm">
+            <div class="link-container container-one">
+              <a class="link-sm link-red" href="./team.html">become an agent</a>
+            </div>
+            <div class="link-container container-two">
+              <a class="link-sm" href="./agents.html">agents</a>
+            </div>
+            <div class="link-container container-three">
+              <a class="link-sm hotel-link" href="./hotels.html">hotels</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </section>
 
-  <footer class="footer-container">
-    <div class="footer-links">
-      <a href="./contact-us.html" class="footer-link">Contact Us</a>
-      <a href="./curious.html" class="footer-link">Curious?</a>
-      <a href="../index.html" class="footer-link home-link">Home</a>
+  </main>
+  <footer class="footer-wrapper">
+    <div class="footer-container">
+      <div>
+        <p class="footer-terms"><a class="footer-terms" href=""> Terms, conditions and policies</a></p>
+      </div>
+      <div>
+        <p class="footer-copyright">Copyright © 2023 All Rights Reserved by <span class="footer-logo"> White Lable Travel</span></p>
+      </div>
     </div>
-    <p class="footer-copyright">Copyright © 2023 All Rights Reserved by<span class="footer-logo">White Lable Travel</span></p>
-  </footer>
+  </footer> 
   <!-- JavaScript -->
   <script src="./script.js"></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
