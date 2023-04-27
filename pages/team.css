@@ -1,3 +1,4 @@
+html,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
@@ -5,6 +6,7 @@ body {
   background-color: #E5EDFB;
   position: relative;
   width: 100%;
+  height: 100%;
 
 }
 
@@ -24,47 +26,53 @@ a {
 .main-wrapper {
   width: 100%;
   display: flex;
-
 }
 
 .left-side {
   width: 35%;
   height: 100vh;
-  position: relative;
 }
 
 .logo-container {
   width: 100%;
   height: 50%;
   padding-top: 2em;
-}
-
-.logo,
-.img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.img {
-  height: 100%;
   position: relative;
-
 }
+
 
 .img-container {
   width: 100%;
   height: 50%;
 }
 
+.logo,
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  max-width: 95%;
+}
+
+.img {
+  height: 100%;
+}
+
+
+
+
 .right-side {
   width: 65%;
+  height: 100%;
 }
 
 
 .content-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -121,53 +129,44 @@ a {
   color: #0070C0;
 }
 
-.link-btns {
-  display: flex;
-}
-
 .page-content {
   width: 95%;
-  margin: 0px auto;
-
+  margin: 1em auto;
 }
 
 .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-  padding-left: .5em;
-  row-gap: .5em;
+  gap: .3rem;
 }
 
 .member-card {
-  background-color: #F2F2F2;
-  position: relative;
-  width: 100%;
-  height: 250px;
-  margin-left: .3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid blue;
 }
 
-.member-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.name-role {
-  color: whitesmoke;
-  position: absolute;
-  bottom: 0;
-  margin-left: 2em;
-  margin-bottom: .2em;
-  z-index: 3;
-  text-shadow: 1px 1px 5px black;
-}
 
-.role {
-  text-shadow: 1px 1px 5px black;
-  color: goldenrod;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link-btns {
+  display: flex;
 }
 
 .link-btns-lg,
@@ -242,6 +241,10 @@ a {
     display: none;
   }
 
+  .logo {
+    display: none;
+  }
+
 
   .main-wrapper {
     display: flex;
@@ -250,6 +253,11 @@ a {
 
   .mobile-nav {
     z-index: 2;
+  }
+
+  .nav-logo {
+    width: 5rem;
+    padding-left: .5em;
   }
 
   .navbar-nav {
@@ -262,6 +270,7 @@ a {
 
   .left-side {
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
   }
@@ -283,7 +292,7 @@ a {
 
   .title-hashtag {
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .title {
@@ -299,47 +308,30 @@ a {
     font-size: 1.25rem;
   }
 
-  .page-content {
-    width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .link-btns-sm {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
   }
 
-  .team-container {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    padding-left: 1em;
-  }
-
-  @media(max-width:320px) {
-    .team-container {
-      max-width: 100%;
-      padding-left: 0em;
-
-    }
-
-    .member-card {
-      width: 100%;
-      margin-left: .9em;
-    }
-
-    .link-btns-sm {
-      margin-top: .5rem;
-      margin-bottom: .5rem;
-    }
-
-    .footer-wrapper {
-      margin-bottom: -3em;
-    }
-  }
-
-  .member-card {
-    width: 100%;
-    height: 200px;
-  }
-
-  .name-role,
-  .role {
-    font-size: .75rem;
-  }
 
   .link-btns {
     margin-bottom: 0rem;
@@ -356,7 +348,7 @@ a {
   }
 
   .footer-wrapper {
-    margin-bottom: -5em;
+    margin-bottom: 0em;
   }
 
   .footer-container {
@@ -378,9 +370,21 @@ a {
 /*------------- tablet ----------------------*/
 @media(max-width:768px) {
 
+  .logo-container {
+    padding-top: 1rem;
+  }
+
+  .logo {
+    height: 66%;
+    margin-bottom: 0em;
+  }
+
+  .team-container {
+    margin-top: 4em;
+  }
+
   .member-card {
-    width: 125px;
-    height: 175px;
+    flex-basis: 150px;
   }
 
   .link-lg {
@@ -409,12 +413,12 @@ a {
     display: none;
   }
 
+
   /*------------- PC ----------------------*/
   @media(min-width:1024px) {
     .mobile-nav {
       display: none;
     }
-
 
 
     .footer-wrapper {
