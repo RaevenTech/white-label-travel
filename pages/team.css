@@ -76,7 +76,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  gap: 2em;
 }
 
 .title-hashtag {
@@ -130,13 +130,15 @@ a {
 }
 
 .page-content {
-  width: 95%;
-  margin: 1em auto;
+  max-width: 95%;
+  height: 100%;
+  margin: 0em auto;
 }
 
 .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
   gap: .3rem;
 }
 
@@ -146,7 +148,30 @@ a {
   align-items: center;
   background-color: #f2f2f2;
   border: 1px solid blue;
+  position: relative;
 }
+
+.member-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-role {
+  margin-top: -1.5em;
+  margin-bottom: 0em;
+}
+
+.name {
+  color: whitesmoke;
+  font-weight: 400;
+  margin-right: .5em;
+}
+
+.role {
+  color: gold;
+}
+
 
 
 
@@ -236,6 +261,8 @@ a {
 }
 
 /*------------- mobile ----------------------*/
+/*------------- mobile ----------------------*/
+/*------------- mobile ----------------------*/
 @media(max-width:480px) {
   .link-btns-lg {
     display: none;
@@ -290,6 +317,16 @@ a {
     z-index: 2;
   }
 
+  .content-container {
+    gap: 0em;
+  }
+
+  .page-content {
+    width: 80%;
+    margin: 0em auto;
+    margin-bottom: 1.5rem;
+  }
+
   .title-hashtag {
     flex-direction: column;
     margin-top: 1rem;
@@ -308,6 +345,24 @@ a {
     font-size: 1.25rem;
   }
 
+  .team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 175px;
+    gap: .2rem;
+  }
+
+  @media(max-width:320px) {
+    .team-container {
+      margin-top: 2em;
+      grid-template-rows: 150px;
+    }
+
+    .name,
+    .role {
+      font-size: .7rem;
+    }
+  }
 
 
 
@@ -348,7 +403,7 @@ a {
   }
 
   .footer-wrapper {
-    margin-bottom: 0em;
+    margin-bottom: -2em;
   }
 
   .footer-container {
@@ -368,6 +423,8 @@ a {
 }
 
 /*------------- tablet ----------------------*/
+/*------------- tablet ----------------------*/
+/*------------- tablet ----------------------*/
 @media(max-width:768px) {
 
   .logo-container {
@@ -380,8 +437,14 @@ a {
   }
 
   .team-container {
-    margin-top: 4em;
+    margin-top: 0em;
+    grid-template-rows: 200px;
   }
+
+  .title-hashtag {
+    margin-top: 0rem;
+  }
+
 
   .member-card {
     flex-basis: 150px;
@@ -414,6 +477,8 @@ a {
   }
 
 
+  /*------------- PC ----------------------*/
+  /*------------- PC ----------------------*/
   /*------------- PC ----------------------*/
   @media(min-width:1024px) {
     .mobile-nav {
