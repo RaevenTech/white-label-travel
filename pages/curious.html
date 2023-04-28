@@ -13,28 +13,36 @@
 <body>
   <main class="main-wrapper">
     <div class="left-side">
-        <img class="page-logo" src="" alt="White label travel logo">
-        <img class="main-img" src="" alt="New York city look out">
+      <div class="logo-container">
+        <img class="logo" src="../images/White-logo-no-bg.png" alt="White label travel logo">
       </div>
+      <div class="img-container">
+        <img class="img" src="../images/nyc-lookout.jpg" alt="New York city look out">
+      </div> 
+    </div>
       <div class="right-side">
         <!-- header dropdown for mobile -->
         <section class="mobile-nav">
           <nav class="navbar navbar-expand-lg navbar-dark bg-none">
             <div class="container-fluid">
-              <a class="navbar-brand nav-logo" href="../index.html"><span class="wlt-logo">WHITE LABEL TRAVEL</span></a>
+              <a class="navbar-brand nav-logo" href="../index.html">
+                <span class="wlt-nav-logo">
+                  <img class="nav-logo" src="../images/White-logo-no-bg.png" alt="White label travel">
+                </span>
+              </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#"><span class="nav-link-txt">agents</span></a>
+                    <a class="nav-link"  href="./agents.html"><span class="nav-link-txt">agents</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-txt">hotels</span></a>
+                    <a class="nav-link" href="./hotels.html"><span class="nav-link-txt">hotels</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="nav-link-txt nav-link-red">become an agent</span></a>
+                    <a class="nav-link" href="./become-agent.html"><span class="nav-link-txt nav-link-red">become an agent</span></a>
                   </li>
                 </ul>
               </div>
@@ -59,30 +67,42 @@
         </div>
         <div class="page-links-container">
           <div class="page-links-one">
-            <a class="page-link-lg link-home"  href="../index.html">home</a>
-            <a class="page-link-lg about-link" href="./aboutUs.html">about us</a>
-            <a class="page-link-lg team-link" href="./team.html">the team</a>
+            <div class="link link-home-lg">
+              <a class=" page-link-lg link-home"  href="../index.html">home</a>
+            </div>
+            <div class="link">
+              <a class=" page-link-lg about-link" href="./aboutUs.html">about us</a>
+            </div>
+            <div class="link">
+              <a class=" page-link-lg team-link" href="./team.html">the team</a>
+            </div>
           </div>
           <div class="page-links-two">
-            <a class="page-link-sm link-red" href="./become-agent.html">become an agent</a>
-            <a class="page-link-sm agents-link" href="./agents.html">agents</a>
-            <a class="page-link-sm hotels-link" href="./hotels.html">hotels</a>
+            <div class="link link-sm link-sm-red">
+              <a class="page-link-sm link-red" href="./become-agent.html">become an agent</a>
+            </div>
+            <div class="link link-sm">
+              <a class=" page-link-sm agents-link" href="./agents.html">agents</a>
+            </div>
+            <div class="link link-sm">
+              <a class="page-link-sm hotels-link" href="./hotels.html">hotels</a>
+            </div>
           </div>
         </div>
-
+        <footer class="footer-wrapper">
+          <div class="footer-container">
+            <div class="footer-terms">
+              <p class="terms"><a href="./terms-conditions.html"> Terms, conditions and policies</a></p>
+            </div>
+            <div class="footer-copyright">
+              <p class="copyright">Copyright © 2023 All Rights Reserved by <span class="footer-logo"> White Lable Travel</span></p>
+            </div>
+          </div> 
+        </footer> 
       </div>
   </main>
 
-  <footer class="footer-wrapper">
-    <div class="footer-container">
-      <div class="footer-terms">
-        <p class="terms">Terms, conditions and policies</p>
-      </div>
-      <div class="footer-copyright">
-        <p class="copyright">Copyright © 2023 All Rights Reserved by <span class="footer-logo"> White Lable Travel</span></p>
-      </div>
-    </div> 
-  </footer> 
+ 
   <!-- JavaScript -->
   <script src="./script.js"></script>
   <!-- Bootstrap -->
