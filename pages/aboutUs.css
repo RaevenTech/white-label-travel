@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #575757;
-  background-color: #eeeeee;
+  background-color: #E2E3E2;
   max-width: 100%;
 }
 
@@ -18,15 +18,26 @@ a {
   text-decoration: none;
 }
 
-/*------------- about us  ----------------------*/
+/*-------------  global styles  ----------------------*/
+.main-wrapper {
+  display: flex;
+
+}
+
+
+
+/*-------------  mobile styles  ----------------------*/
 @media(max-width:480px) {
   .main-wrapper {
-    display: flex;
     flex-direction: column;
-    border: 1px solid blue;
-  }
-
-  .left-container {
-    display: none;
   }
 }
+
+/*-------------  tablet styles  ----------------------*/
+@media(max-width:768px) {}
+
+/*-----------------  PC styles  ----------------------*/
+@media(max-width:1024px) {}
+
+/*-----------------   large-PC styles  ----------------------*/
+@media(min-width:1280px) {}

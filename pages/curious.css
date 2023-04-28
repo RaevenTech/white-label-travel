@@ -33,7 +33,6 @@ a {
   text-align: center;
   width: 30%;
   height: 100%;
-  border: 1px solid red;
   position: relative;
 }
 
@@ -66,7 +65,7 @@ a {
 
 .right-side {
   width: 70%;
-  border: 1px solid green;
+
 }
 
 .page-quote {
