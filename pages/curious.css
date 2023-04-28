@@ -108,6 +108,7 @@ a {
 
 .page-content {
   width: 95%;
+  height: 75%;
   margin: 0px auto;
   border: 2px solid whitesmoke;
   opacity: .5;
@@ -118,8 +119,9 @@ a {
   display: flex;
   align-items: center;
   gap: 2.5em;
-  height: 90px;
-  border: #00f09c 1px solid;
+  height: 75px;
+  margin-top: 1em;
+
 }
 
 .page-links-one,
@@ -160,14 +162,6 @@ a {
   background-color: red;
   padding-top: .6em;
 }
-
-
-
-
-
-
-
-
 
 
 /*------------------- footer ------------------------*/
@@ -232,6 +226,7 @@ a {
 
 
 
+
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -251,12 +246,31 @@ a {
     display: none;
   }
 
-  .tag {
-    font-size: 1rem;
+  .navbar-nav {
+    background-color: #81a9c5ab;
+  }
+
+
+
+  .nav-link-txt {
+    color: whitesmoke;
+    font-weight: 400;
   }
 
   .nav-logo {
     width: 45%;
+  }
+
+  .nav-link-red {
+    color: gold;
+  }
+
+  .tag {
+    font-size: 1rem;
+  }
+
+  .page-content {
+    height: 60%;
   }
 
   .page-links-two {
@@ -266,6 +280,7 @@ a {
   .page-links-container {
     display: flex;
     justify-content: center;
+    margin-top: .2em;
   }
 
   .link {
@@ -273,6 +288,14 @@ a {
     height: 60px;
     text-align: center;
     padding: .5em .5em;
+  }
+
+  .link-lg {
+    padding-top: .85em;
+  }
+
+  .link-home-lg {
+    padding-top: 1.15em;
   }
 
 
@@ -283,15 +306,16 @@ a {
   .mobile-nav {
     display: none;
   }
-}
 
-@media(min-width:1280px) {
-  .page-links-container {
-    gap: 3em;
-  }
 
-  .page-links-one,
-  .page-links-two {
-    gap: 3em;
+
+  @media(min-width:1280px) {
+    .page-links-container {
+      gap: 3em;
+    }
+
+    .page-links-one,
+    .page-links-two {
+      gap: 3em;
+    }
   }
-}
