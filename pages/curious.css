@@ -21,7 +21,6 @@ a {
   text-decoration: none;
 }
 
-
 /*-------------  global styles curiosity page ----------------------*/
 .main-wrapper {
   width: 100%;
@@ -218,24 +217,13 @@ a {
     color: #0f3c5c;
   }
 
-
-
-
-
-
-
-
-
   .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: .5rem;
   }
-
-
 }
-
 
 @media(min-width:320px) {}
 
@@ -297,7 +285,6 @@ a {
     padding-top: 1.15em;
   }
 
-
 }
 
 /*---------------------- PC styling ----------------------*/
@@ -305,16 +292,15 @@ a {
   .mobile-nav {
     display: none;
   }
+}
 
-
-
-  @media(min-width:1280px) {
-    .page-links-container {
-      gap: 3em;
-    }
-
-    .page-links-one,
-    .page-links-two {
-      gap: 3em;
-    }
+@media(min-width:1280px) {
+  .page-links-container {
+    gap: 3em;
   }
+
+  .page-links-one,
+  .page-links-two {
+    gap: 3em;
+  }
+}
