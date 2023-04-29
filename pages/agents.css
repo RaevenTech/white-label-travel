@@ -129,6 +129,12 @@ a {
 
 }
 
+@media(min-width:1280px) {
+  .page.page-content {
+    height: 1000px;
+  }
+}
+
 /*------------- tablet layout ----------------------*/
 @media(min-width:768px) {
   .main-wrapper {
@@ -185,12 +191,6 @@ a {
     opacity: .5;
     text-align: center;
     height: 60vh;
-  }
-
-  @media(min-width:1280px) {
-    .page.page-content {
-      height: 1000px;
-    }
   }
 
   .page-link-btns {

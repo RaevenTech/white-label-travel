@@ -172,24 +172,6 @@ a {
   color: gold;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .link-btns {
   display: flex;
 }
@@ -244,10 +226,6 @@ a {
   background-color: #8399C2;
 }
 
-
-
-
-
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -260,8 +238,6 @@ a {
   color: #CACBCF;
 }
 
-/*------------- mobile ----------------------*/
-/*------------- mobile ----------------------*/
 /*------------- mobile ----------------------*/
 @media(max-width:480px) {
   .link-btns-lg {
@@ -352,41 +328,10 @@ a {
     gap: .2rem;
   }
 
-  @media(max-width:320px) {
-    .team-container {
-      margin-top: 2em;
-      grid-template-rows: 150px;
-    }
-
-    .name,
-    .role {
-      font-size: .7rem;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .link-btns-sm {
     margin-top: .5rem;
     margin-bottom: .5rem;
   }
-
 
   .link-btns {
     margin-bottom: 0rem;
@@ -418,15 +363,22 @@ a {
     text-align: center;
     line-height: .5rem;
   }
+}
 
+@media(max-width:320px) {
+  .team-container {
+    margin-top: 2em;
+    grid-template-rows: 150px;
+  }
 
+  .name,
+  .role {
+    font-size: .7rem;
+  }
 }
 
 /*------------- tablet ----------------------*/
-/*------------- tablet ----------------------*/
-/*------------- tablet ----------------------*/
 @media(max-width:768px) {
-
   .logo-container {
     padding-top: 1rem;
   }
@@ -475,34 +427,33 @@ a {
   .mobile-nav {
     display: none;
   }
+}
 
 
-  /*------------- PC ----------------------*/
-  /*------------- PC ----------------------*/
-  /*------------- PC ----------------------*/
-  @media(min-width:1024px) {
-    .mobile-nav {
-      display: none;
-    }
-
-
-    .footer-wrapper {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    .footer-terms,
-    .footer-copyright {
-      margin-bottom: .2rem;
-    }
-
+/*------------- PC ----------------------*/
+@media(min-width:1024px) {
+  .mobile-nav {
+    display: none;
   }
 
-  @media(min-width:1440px) {
-    .logo {
-      max-width: 22em;
-      margin-left: 4em;
-    }
+
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
+
+  .footer-terms,
+  .footer-copyright {
+    margin-bottom: .2rem;
+  }
+
+}
+
+@media(min-width:1440px) {
+  .logo {
+    max-width: 22em;
+    margin-left: 4em;
+  }
+}

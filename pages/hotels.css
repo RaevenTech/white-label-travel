@@ -135,10 +135,6 @@ a {
   padding: 0rem .3rem;
 }
 
-
-
-
-
 /*------------------- footer ------------------------*/
 
 .logo-img-container {
@@ -252,13 +248,6 @@ a {
   .footer-terms {
     font-size: .5rem;
   }
-
-
-
-
-
-
-
 }
 
 /*------------------- tablet------------------------*/
@@ -281,5 +270,4 @@ a {
     bottom: 0.1rem;
     right: 0.1rem;
   }
-
 }
