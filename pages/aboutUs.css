@@ -61,6 +61,9 @@ a {
   top: 0em;
   left: 0em;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titles {
@@ -107,18 +110,81 @@ a {
   color: #FFC000;
 }
 
+.page-content {
+  width: 90%;
+  height: 70vh;
+  margin: 1em auto;
+}
+
+.links-btns {
+  display: flex;
+  height: 80px;
+}
+
+.lg-btn,
+.sm-btn {
+  border-radius: 10px;
+  margin-right: 1.5em;
+  padding-top: 1.5em;
+
+}
 
 
+.btn-team {
+  padding-top: 1em;
+}
+
+.btn {
+  width: 80px;
+  height: 70px;
+  background-color: #2F5496;
+  line-height: 1em;
+}
+
+
+.link {
+  color: whitesmoke;
+}
+
+.sm-btn {
+  width: 70px;
+  height: 60px;
+  line-height: .6rem;
+  padding-top: 1.25em;
+}
+
+.link-sm {
+  font-size: .9rem;
+}
+
+.btn-red {
+  padding-top: 0.8em;
+  background-color: red;
+}
+
+.btn-hotel {
+  background-color: #2f559686;
+}
+
+
+
+
+.footer-wrapper {
+  width: 100%;
+}
 
 .footer-container {
   display: flex;
+
   justify-content: space-between;
   padding: 0em .5em;
 }
 
 .terms,
 .copyright {
-  font-size: .5rem;
+  font-size: .6rem;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 /*-----------------  PC styles  ----------------------*/
@@ -151,13 +217,23 @@ a {
   }
 
   .navbar-toggler {
-    background-color: rgba(11, 214, 225, 0.53);
     text-align: end;
+  }
+
+  .navbar-nav {
+    color: slategrey;
+    background-color: #7f7f7f;
+    padding-left: .5em;
+  }
+
+  .nav-link:hover {
+    color: whitesmoke;
+    background-color: darkslategrey;
   }
 
   .img-container {
     width: 40%;
-    opacity: .2;
+    opacity: .8;
   }
 
   .title-lg-txt {
@@ -166,8 +242,47 @@ a {
 
   .hashtag {
     justify-content: center;
-
   }
+
+  .page-content {
+    width: 80%;
+    height: 55vh;
+  }
+
+  .links-lg {
+    display: none;
+  }
+
+  .links-btns {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .links-sm {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .btn {
+    width: 70px;
+    height: 60px;
+    background-color: #2F5496;
+  }
+
+  .lg-btn,
+  .sm-btn {
+    line-height: 1em;
+    margin-right: 0em;
+    padding: 1.15rem .5em .0em .5em;
+    z-index: 3;
+  }
+
+  .btn-red {
+    padding: .3rem .5em .7em .5em;
+    background-color: red;
+  }
+
 
 
 
@@ -202,6 +317,18 @@ a {
 
   .hashtag {
     justify-content: center;
+  }
+
+  .page-content {
+    height: 50vh;
+  }
+
+  .footer-container {
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 1em;
   }
 
 }
