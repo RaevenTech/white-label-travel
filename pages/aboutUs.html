@@ -13,14 +13,51 @@
 <body>
   <main class="main-wrapper">
     <div class="left-side">
-      <img src="" alt="wlt-logo">
+      <div class="logo-container">
+        <img class="wlt-logo" src="../images/Black-logo-no-bg.png" alt="White label travel logo">
+      </div>
     </div>
 
     <div class="right-side">
       <section class="main-img">
-        <img src="" alt="sea side resort">
+        <div class="img-container">
+          <img class="img" src="../images/hotel-topView.jpg" alt="sea side resort">
+        </div>
       </section>
+
+    
+
       <section class="content-container">
+        <!------ mobile navbar ------->
+        <section class="mobile-nav">
+          <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container-fluid">
+              <a class="navbar-brand nav-logo" href="../index.html">
+                <span class="wlt-nav-logo">
+                  <img class="nav-logo" src="../images/Black-logo-no-bg.png" alt="White label travel">
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="./agents.html"><span class="nav-link-txt">agents</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./hotels.html"><span class="nav-link-txt">hotels</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./become-agent.html"><span class="nav-link-txt nav-link-red">become an agent</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </section>
+        <!---- mobile navbar end ----->
+
         <div class="titles-hashtag">
           <div class="titles">
             <div class="title-lg">
@@ -30,7 +67,6 @@
               <h1 class="title title-sm-txt">pay small</h1>
             </div>
           </div>
-
           <div class="hashtag">
             <span class="tag hashtag-blue">#</span>
             <span class="tag hashtag-green">about</span>
@@ -42,11 +78,11 @@
   </main>
   <footer class="footer-wrapper">
     <div class="footer-container">
-      <div class="terms">
-        <p class="footer-terms"><a href="./terms-conditions.html" class="terms-conditions-link">Terms, consitions and policies</a></p>
+      <div class="-footer-terms">
+        <p class="terms"><a href="./terms-conditions.html" class="terms-link">Terms, consitions and policies</a></p>
       </div>
-      <div class="copyright">
-        <p class="footer-copyright">Copyright © 2023 All Rights Reserved by <span class="footer-logo"> White Lable Travel</span></p>
+      <div class="-footer-copyright">
+        <p class="copyright">Copyright © 2023 All Rights Reserved by <span class="footer-logo"> White Lable Travel</span></p>
       </div>
     </div>
   </footer>
