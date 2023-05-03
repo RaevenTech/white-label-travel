@@ -285,6 +285,7 @@ a {
   .logo {
     margin-top: -2rem;
     width: 7rem;
+    object-fit: cover;
   }
 
   .right-side {
@@ -436,6 +437,15 @@ a {
     display: none;
   }
 
+  .logo-container {
+    padding-top: 0em;
+    width: 100%;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
 
   .footer-wrapper {
     position: absolute;
@@ -452,8 +462,10 @@ a {
 }
 
 @media(min-width:1440px) {
+
+
   .logo {
-    max-width: 22em;
+    width: 22em;
     margin-left: 4em;
   }
 }

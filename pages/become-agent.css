@@ -57,7 +57,6 @@ a {
 
 .right-side {
   width: 65%;
-  border: red 1px solid;
 }
 
 .content-container {
@@ -66,7 +65,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: #00f0a0 1px solid;
 }
 
 .title-hashtag {
@@ -231,14 +229,11 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border: #00f0a0 1px solid;
-
   }
 
   .title-hashtag {
     margin-top: 10rem;
     flex-direction: column;
-    border: #f08c00 1px solid;
   }
 
   .title {
@@ -266,10 +261,6 @@ a {
   .hotel-link {
     margin-right: 0em;
   }
-
-
-
-
 
   .footer-container {
     flex-direction: column;
@@ -311,7 +302,10 @@ a {
     display: none;
   }
 
-
+  .logo {
+    width: 80%;
+    padding-left: 2em;
+  }
 
   .footer-wrapper {
     position: absolute;
