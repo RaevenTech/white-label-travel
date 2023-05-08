@@ -57,7 +57,10 @@ a {
   font-weight: 400;
   font-size: 1.75rem;
   padding-left: 1rem;
+}
 
+.first-title {
+  margin-bottom: 1rem;
 }
 
 .second-title {
@@ -95,10 +98,13 @@ a {
 
 .link-btn {
   color: whitesmoke;
-  background-color: #0070C0;
+  background-color: #0339601b;
   padding: 1.5rem 1.5rem;
   border-radius: 10px;
-  box-shadow: 2px 2px 3px 2px gray;
+  text-shadow: 1px 1px 7px #00111d;
+  border: 1px solid #9e9e9e;
+  box-shadow: inset 0px 0px 3px #1d5278b3,
+    0px -2px #C8DCEA;
 }
 
 .curious-link {
@@ -115,7 +121,7 @@ a {
 
 p {
   margin-bottom: 0rem;
-  font-size: .7rem;
+  font-size: .5rem;
 }
 
 .footer-terms {
@@ -131,6 +137,26 @@ p {
   right: 0.1rem;
   padding-right: .5rem;
 }
+
+/*-------- PC layout ---------*/
+@media(min-width:1024px) {
+  .mobile-nav {
+    display: none;
+  }
+
+}
+
+/*-------- tablet layout ---------*/
+@media(max-width:768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .logo {
+    max-width: 20rem;
+  }
+}
+
 
 /*-------- mobile layout ---------*/
 @media(max-width:480px) {
@@ -163,6 +189,10 @@ p {
 
   .title {
     text-align: center;
+  }
+
+  .first-title {
+    margin-bottom: 0rem;
   }
 
   .second-title {
@@ -219,25 +249,5 @@ p {
     margin-right: 1.5rem;
   }
 
-
-}
-
-
-/*-------- tablet layout ---------*/
-@media(max-width:768px) {
-  .mobile-nav {
-    display: none;
-  }
-
-  .logo {
-    max-width: 20rem;
-  }
-}
-
-/*-------- PC layout ---------*/
-@media(min-width:1024px) {
-  .mobile-nav {
-    display: none;
-  }
 
 }
