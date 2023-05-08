@@ -2,7 +2,7 @@ html,
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
-  color: #575757;
+  color: #7f7f7f;
   background-color: #E5EDFB;
   position: relative;
   width: 100%;
@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: whitesmoke;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a {
 .left-side {
   display: flex;
   flex-direction: column;
-  max-width: 35%;
+  width: 40%;
   height: 100%;
   border: 1px solid rgb(237, 151, 39);
 }
@@ -55,9 +55,49 @@ a {
   display: block;
   width: 100%;
   height: 49vh;
-  object-fit: contain;
+  object-fit: cover;
   align-self: flex-end;
 }
+
+.right-side {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.title-hashtag {
+  display: flex;
+  align-items: baseline;
+  gap: .5em;
+}
+
+.title {
+  font-size: 3em;
+  padding-left: .5em;
+}
+
+.hashtag {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.tag-blue {
+  color: #0070C0;
+}
+
+.tag-gold {
+  color: #FFC000;
+}
+
+.tag-light-grey {
+  color: #AEABAB;
+}
+
+
+.team-container {
+  margin-left: 5.5em;
+}
+
+
 
 
 
@@ -65,16 +105,14 @@ a {
 
 
 .footer-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0em 1em;
   font-size: .8rem;
 }
 
-.footer-copyright,
-.footer-terms {
-  color: #CACBCF;
-}
+
 
 /*------------- PC ----------------------*/
 @media(min-width:1024px) {
@@ -109,6 +147,14 @@ a {
     background-color: #8399c2b1;
   }
 
+
+  .right-side {
+    width: 100%;
+    border: 1px solid red;
+  }
+
+
+
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -121,9 +167,6 @@ a {
     margin-bottom: 0.5em;
   }
 
-  .terms-link {
-    color: #575757;
-  }
 }
 
 @media(max-width:320px) {}
