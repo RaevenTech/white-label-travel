@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #575757;
+  color: #7f7f7f;
   text-decoration: none;
 }
 
@@ -64,6 +64,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: .5em;
 }
 
 .titles {
@@ -112,7 +113,7 @@ a {
 
 .page-content {
   width: 90%;
-  height: 70vh;
+  height: 65vh;
   margin: 1em auto;
 }
 
@@ -124,21 +125,27 @@ a {
 .lg-btn,
 .sm-btn {
   border-radius: 10px;
-  margin-right: 1.5em;
-  padding-top: 1.5em;
+  margin-right: 2.5em;
+  padding-top: 1.8em;
 
 }
 
 
 .btn-team {
-  padding-top: 1em;
+  padding-top: 1.3em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .btn {
-  width: 80px;
-  height: 70px;
-  background-color: #2F5496;
+  width: 90px;
+  height: 80px;
   line-height: 1em;
+  text-shadow: 1px 1px 5px rgb(48, 48, 48);
+  border: 1px solid rgb(72, 115, 215);
+  background-color: #1c5fd339;
+  box-shadow: 1px 1px 4px rgb(230, 230, 230),
+    inset 0px 0px 5px 1px rgb(105, 105, 158)
 }
 
 
@@ -147,10 +154,10 @@ a {
 }
 
 .sm-btn {
-  width: 70px;
-  height: 60px;
+  width: 80px;
+  height: 70px;
   line-height: .6rem;
-  padding-top: 1.25em;
+  padding-top: 1.65em;
 }
 
 .link-sm {
@@ -158,12 +165,19 @@ a {
 }
 
 .btn-red {
-  padding-top: 0.8em;
-  background-color: red;
+  line-height: .9rem;
+  padding-top: 0.65em;
+  padding-right: 1rem;
+  padding-left: 0.8rem;
+  background-color: rgba(255, 0, 0, 0.257);
+  border: 1px solid grey;
+  box-shadow: 2px 2px 5px 2px rgba(60, 60, 60, 0.597),
+    inset 0px 0px 5px 1px rgb(255, 0, 0);
 }
 
 .btn-hotel {
-  background-color: #2f559686;
+  background-color: #6390ec54;
+  border: 1px solid rgba(0, 0, 0, 0.29);
 }
 
 .footer-wrapper {
@@ -171,8 +185,10 @@ a {
 }
 
 .footer-container {
+  width: 100%;
   display: flex;
-
+  position: absolute;
+  bottom: 0;
   justify-content: space-between;
   padding: 0em .5em;
 }
@@ -264,12 +280,12 @@ a {
   .btn {
     width: 70px;
     height: 60px;
-    background-color: #2F5496;
+
   }
 
   .lg-btn,
   .sm-btn {
-    line-height: 1em;
+    line-height: .8em;
     margin-right: 0em;
     padding: 1.15rem .5em .0em .5em;
     z-index: 3;
@@ -277,8 +293,8 @@ a {
 
   .btn-red {
     padding: .3rem .5em .7em .5em;
-    background-color: red;
   }
+
 }
 
 /*-------------  mobile styles  ----------------------*/
@@ -314,6 +330,14 @@ a {
 
   .page-content {
     height: 50vh;
+  }
+
+  .btn {
+    padding-top: 1.25em;
+  }
+
+  .btn-red {
+    padding-top: .5em;
   }
 
   .footer-container {
