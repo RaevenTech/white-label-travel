@@ -2,13 +2,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #e6e6e6;
-  background-image: url("");
-  opacity: 0.99;
-  max-width: 100%;
+  width: 100%;
   background: #040716;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   box-sizing: border-box;
 }
@@ -20,342 +15,156 @@ body {
 }
 
 a {
-  color: #575757;
+  color: #7f7f7f;
   text-decoration: none;
 }
 
-/*------------- agents page ----------------------*/
-.mobile-nav {
-  display: none;
+/*------------- global styles ----------------------*/
+.main-container {
+  display: flex;
+  width: 99.98%;
+  height: 100%;
 }
 
-.hashtag-green {
-  color: green;
+.left-container {
+  width: 35%;
+  height: 100%;
+  border: 1px solid green;
 }
 
-.hashtag-red {
-  color: red;
+.logo {
+  width: 7em;
+  position: absolute;
+  top: 0em;
+  left: 1em;
 }
 
-.hashtag-gray {
-  color: gray;
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-container {
+  border: 1px solid yellowgreen;
+  box-sizing: border-box;
+}
+
+.title-hashtag {
+  display: flex;
+  align-items: baseline;
+  padding-left: 1em;
+  gap: 1em;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.hashtag {
+  display: flex;
+
+}
+
+.page-content {
+  width: 90%;
+  margin: 0px auto;
+}
+
+
+.tag-green {
+  color: #00B050;
+}
+
+.tag-red {
+  color: #C00000;
+}
+
+.tag-gray {
+  color: #8296B0;
+}
+
+
+
+.footer-wrapper {
+  width: 99%;
+  padding: 0em 3em .3em .5em;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+p {
+  margin: 0;
+  font-size: .5em;
 }
 
 /*------------- PC main layout  ----------------------*/
-@media(min-width:1024px) {
-  .main-wrapper {
-    max-width: 100%;
-  }
-
-  .main-container {
-    display: flex;
-  }
-
-  .image-logo {
-    max-width: 40%;
-    position: relative;
-  }
-
-  .main-img-logo {
-    position: absolute;
-    top: 0.5rem;
-    left: 1.5rem;
-    width: 9rem;
-  }
-
-  .main-img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .main-content {
-    width: 60%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .title-hashtag-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .main-title {
-    font-size: 3rem;
-    font-weight: 400;
-    margin-top: 1rem;
-  }
-
-  .hashtag {
-    display: flex;
-    letter-spacing: -1px;
-    font-weight: 400;
-    margin: 0rem;
-  }
-
-  .page-content {
-    width: 90%;
-    margin: 0rem auto;
-    opacity: .5;
-    text-align: center;
-    height: 90vh;
-  }
-
-  .page-link-btns {
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3rem 0rem;
-
-  }
-
-  .page-link-btn {
-    background-color: #2F5496;
-    color: #e6e6e6;
-    padding: 1.5rem .5rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-
-  .home-btn {
-    padding: 1.45rem .9rem;
-  }
-
-  .hotels-btn {
-    padding: 1.45rem .9rem;
-  }
-
-}
-
-@media(min-width:1280px) {
-  .page.page-content {
-    height: 1000px;
-  }
-}
+@media(min-width:1440px) {}
 
 /*------------- tablet layout ----------------------*/
-@media(min-width:768px) {
-  .main-wrapper {
-    max-width: 100%;
-  }
-
-  .main-container {
-    display: flex;
-  }
-
-  .image-logo {
-    max-width: 40%;
-    position: relative;
-  }
-
-  .main-img-logo {
+@media(max-width:768px) {
+  .logo {
+    width: 8em;
     position: absolute;
-    top: 0.5rem;
-    left: 1.5rem;
-    width: 9rem;
-  }
-
-  .main-img {
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .main-content {
-    width: 60%;
-    position: relative;
-  }
-
-  .title-hashtag-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .main-title {
-    font-size: 3rem;
-    font-weight: 400;
-    margin-top: 1rem;
-  }
-
-  .hashtag {
-    display: flex;
-    letter-spacing: -1px;
-    font-weight: 400;
-    margin: 0rem;
-  }
-
-  .page-content {
-    width: 90%;
-    margin: 0rem auto;
-    opacity: .5;
-    text-align: center;
-    height: 60vh;
-  }
-
-  .page-link-btns {
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 0;
-  }
-
-  .page-link-btn {
-    background-color: #2F5496;
-    color: #e6e6e6;
-    padding: 1.5rem .5rem;
-    border-radius: 10px;
-  }
-
-  .home-btn {
-    padding: 1.45rem .9rem;
-  }
-
-  .hotels-btn {
-    padding: 1.45rem .9rem;
+    top: 0em;
+    left: 1em;
   }
 }
 
 /*------------- mobile layout ----------------------*/
 @media(max-width:480px) {
-  .image-logo {
-    display: none;
+  .left-container {
+    width: 100%;
+    height: 100%;
   }
 
-  body {
-    background: #040716;
-    background-image: url("../images/secret-agent.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
-    max-width: 100%;
-  }
-
-  .main-wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-    margin: 0px auto;
-  }
-
-  .mobile-nav {
-    padding: .5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .nav-logo {
+  .logo {
     width: 4rem;
+    position: absolute;
+    top: .5em;
+    left: 1em;
+    z-index: 1;
   }
 
-  .back-btn {
-    color: #8a8a8a;
+  .img {
+    opacity: .7;
+    margin-top: auto;
   }
 
-  .back-btn:hover {
-    color: #e6e6e6;
-  }
-
-  .title-hashtag-container {
+  .right-container {
+    width: 95%;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 1em;
   }
 
-  .main-title {
-    font-size: 2rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0rem;
-    letter-spacing: -1px;
+  .title-hashtag {
+    width: 90%;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 5em;
+    gap: 0em;
+  }
+
+  .title {
+    font-size: 1.5em;
+    margin: 0;
   }
 
   .hashtag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem;
-    font-size: 1.4rem;
-    font-weight: 400;
-    letter-spacing: -1px;
-  }
-
-
-  .content-title {
-    height: 25rem;
+    margin: 0em;
 
   }
 
-  .page-link-btns {
-    display: flex;
-    justify-content: space-evenly;
+  .tag {
+    font-size: .5em;
+
   }
 
-  .page-link-btn {
-    background-color: #2F5496;
-    color: #e6e6e6;
-    padding: 1.2rem .5rem;
-    border-radius: 10px;
-    font-size: .8rem;
-  }
-
-  .page-link-btn:hover {
-    background-color: #3769c0;
-  }
-
-  .home-btn {
-    padding: 1.2rem .9rem;
-  }
-
-  .hotels-btn {
-    padding: 1.2rem .9rem;
-  }
-}
-
-/*------------------- footer ------------------------*/
-
-.footer-wrapper {
-  width: 100%;
-  padding-bottom: .3rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-copyright,
-.footer-policies {
-  font-size: .7rem;
-  text-align: center;
-  color: #8a8a8a;
-  padding-right: 1rem;
-  margin: 0rem;
-}
-
-.footer-policies {
-  padding-left: 1rem;
-}
-
-.terms-conditions-link {
-  color: #8a8a8a;
-}
-
-@media(max-width:480px) {
-  .footer-wrapper {
-    margin-top: 0.5rem;
-  }
-
-  .footer-copyright,
-  .footer-policies {
-    font-size: .5rem;
-  }
-}
-
-@media(min-width:1024px) {
-  .footer-wrapper {
-    position: absolute;
-    bottom: 0;
-  }
 }
