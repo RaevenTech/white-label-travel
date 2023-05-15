@@ -66,12 +66,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 2em;
 }
 
 .title-hashtag {
   width: 100%;
   display: flex;
   margin-top: 1em;
+
 }
 
 .title,
@@ -113,15 +115,29 @@ a {
   color: #00B0F0;
 }
 
-.link-btns {
+.link-btns,
+.link-btns-lg,
+.link-btns-sm {
   display: flex;
+  gap: 1.5em;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 90px;
+  border-radius: 10px;
   background-color: rgba(122, 0, 8, 0.196);
-  box-shadow: 1px 1px 2px 0px rgb(40, 40, 40),
-    inset 0px 0px 3px rgb(122, 0, 8);
+  box-shadow: 1px 1px 4px 0px rgb(184, 184, 184),
+    -1px -1px rgb(37, 37, 37),
+    inset 0px 0px 4px rgb(151, 2, 12);
+}
 
+.btn-sm {
+  width: 80px;
+  height: 70px;
 }
 
 
@@ -167,8 +183,18 @@ a {
 
 /*------------- tablet ----------------------*/
 @media(max-width:768px) {
-  .mobile-nav {
+
+  .link-btns-lg {
     display: none;
+  }
+
+  .nav-logo {
+    width: 3em;
+  }
+
+  .mobile-nav {
+    margin-top: .5em;
+    margin-right: .5em;
   }
 
   .title {
@@ -188,6 +214,8 @@ a {
   }
 }
 
+
+
 /*------------- mobile ----------------------*/
 @media(max-width:480px) {
   .main-wrapper {
@@ -205,13 +233,13 @@ a {
     width: 10rem;
     margin: 0rem auto;
     padding-top: .5em;
-
   }
 
   .logo {
-    width: 100%;
-    margin-top: .5em;
+    display: none;
   }
+
+
 
   .right-side {
     width: 100%;
@@ -246,24 +274,27 @@ a {
   }
 
   .register-link {
-    text-decoration: 1px underline;
+    color: goldenrod !important;
+
   }
 
   .content-container {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    padding-bottom: .5em;
   }
 
   .title-hashtag {
-    margin-top: 10rem;
+    margin-top: 0rem;
+
     flex-direction: column;
   }
 
   .title {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
 
   .hashtag-container {
@@ -279,13 +310,15 @@ a {
     justify-content: center;
   }
 
-  .link-btns-lg {
-    display: none;
+  .link-sm {
+    text-shadow: 2px 2px 5px solid black;
   }
 
 
+
+
+
   .footer-container {
-    flex-direction: column;
     font-size: .5rem;
   }
 
