@@ -1,11 +1,13 @@
-body {
+body,
+html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: #d8d8d8;
   background: rgb(30, 39, 43);
   background: linear-gradient(90deg, rgba(30, 39, 43, 1) 27%, rgba(52, 68, 75, 1) 63%, rgba(71, 93, 103, 1) 95%);
   position: relative;
-  max-width: 100%;
+  width: 100%;
+  height: 100vh;
 }
 
 @media(min-width:1280px) {
@@ -19,15 +21,14 @@ a {
   text-decoration: none;
 }
 
-/*------------- hotels page global styles  ----------------------*/
+/*------------- global styles  ----------------------*/
 .main-wrapper {
   display: flex;
 }
 
 .left-side {
-  max-width: 40%;
+  width: 35%;
 }
-
 
 .logo-img-container {
   max-width: 100%;
@@ -51,10 +52,7 @@ a {
 }
 
 .right-side {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 65%;
 }
 
 .title-container {
@@ -104,98 +102,56 @@ a {
   color: #98BDDE;
 }
 
-.page-content {
-  width: 80%;
-  margin: 2rem auto;
-}
-
-.link-btns {
-  max-width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0rem
-}
-
-.link-btn {
-  background: #2F5496;
-  padding: 1.3rem;
-  border-radius: 10px;
-  margin-bottom: 1em;
-}
-
-.curious-btn {
-  padding: 1.3rem .9rem;
-}
-
-.footer-terms,
-.footer-copyright {
-  margin-bottom: .2rem;
-  font-size: .7rem;
-  padding: 0rem .3rem;
-}
-
-/*------------------- footer ------------------------*/
-
-.logo-img-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.link-btn {
-  margin-right: 1rem;
+.footer-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: 0em;
 }
 
 .footer-container {
-  color: #a3a3a3;
   display: flex;
   justify-content: space-between;
-  font-size: .7rem;
-  padding: 0rem .8rem;
 }
+
+p {
+  color: gray;
+  font-size: .7rem;
+  margin: 0em .5em .25em .5em;
+}
+
+
+
+
+/*------------------- PC ------------------------*/
+@media(min-width:1440px) {}
+
+/*------------------- tablet------------------------*/
+@media(max-width:768px) {}
 
 /*------------------- mobile ------------------------*/
 @media(max-width:480px) {
-  .main-wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  body {
+    height: 100%;
+    width: 95%;
   }
 
   .left-side {
-    max-width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 3em;
+    border: 1px solid red;
   }
 
-  .logo-img-container {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0rem auto;
-    position: relative;
-  }
-
-  .logo {
+  .right-side {
     position: absolute;
-    width: 30%;
-    top: .8rem;
-    left: .2rem;
-    z-index: 2;
-
-  }
-
-  .img {
-    opacity: .7;
+    top: 1em,
   }
 
   .title-container {
     width: 90%;
-    margin-top: -3.5em;
+    margin-top: 0em;
     z-index: 2;
   }
 
@@ -222,53 +178,4 @@ a {
     font-size: 1rem;
   }
 
-  .right-side {
-    width: 100%;
-  }
-
-  .page-content {
-    width: 80%;
-    height: 35vh;
-    margin: 2rem auto;
-  }
-
-  .link-btns {
-    max-width: 100%;
-    padding: 0rem 1rem;
-    margin-top: .5rem;
-  }
-
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: .5rem;
-  }
-
-  .footer-copyright,
-  .footer-terms {
-    font-size: .5rem;
-  }
-}
-
-/*------------------- tablet------------------------*/
-@media(max-width:768px) {}
-
-/*------------------- PC ------------------------*/
-@media(min-width:1024px) {
-  .main-wrapper {
-    margin-top: 1.5rem;
-  }
-
-  .footer-terms {
-    position: absolute;
-    bottom: 0.1rem;
-    left: 0.1rem;
-  }
-
-  .footer-copyright {
-    position: absolute;
-    bottom: 0.1rem;
-    right: 0.1rem;
-  }
 }
