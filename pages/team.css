@@ -33,12 +33,8 @@ a {
   flex-direction: column;
   width: 40%;
   height: 100%;
-  border: 1px solid rgb(237, 151, 39);
 }
 
-.logo-container {
-  border: 1px solid green;
-}
 
 .logo {
   width: 100%;
@@ -46,9 +42,6 @@ a {
   object-fit: contain;
 }
 
-.img-container {
-  border: 1px solid rgb(14, 46, 186);
-}
 
 .img {
   display: block;
@@ -63,7 +56,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid red;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1.5em;
 }
 
 .title-hashtag {
@@ -95,25 +95,22 @@ a {
 }
 
 .team-container {
-  width: 100%;
+  width: 90%;
   margin: 1em auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
 }
 
 .team-cards {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  gap: 1em
+  gap: 1em;
 }
 
 .card {
   width: 50%;
-  align-items: center;
+  height: 50vh;
+  text-align: center;
+  box-shadow: 2px 2px 4px 1px gray;
 }
 
 .links-btns,
@@ -130,9 +127,27 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  background-color: #1c5fd30e;
-  box-shadow: 1px 1px 4px rgb(202, 202, 202),
+  background-color: #1c5fd329;
+  box-shadow: 2px 2px 5px 2px rgba(125, 125, 125, 0.597),
     inset 0px 0px 5px 1px rgb(44, 81, 148);
+}
+
+.sm-btn {
+  width: 80px;
+  height: 70px;
+  line-height: 1rem;
+}
+
+.btn-red {
+  background-color: rgba(255, 0, 0, 0.257);
+  border: 1px solid grey;
+  box-shadow: 2px 2px 5px 2px rgba(60, 60, 60, 0.597),
+    inset 0px 0px 5px 1px rgb(255, 0, 0);
+}
+
+.link {
+  color: white;
+  text-shadow: 0px 0px 5px darkblue;
 }
 
 
@@ -141,7 +156,6 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0em 1em;
   font-size: .8rem;
 }
 
@@ -174,8 +188,13 @@ a {
 
   .links-lg {
     display: none;
-    ;
   }
+
+  .links-btns {
+    justify-content: center;
+    gap: 1em;
+  }
+
 
 }
 
@@ -191,6 +210,10 @@ a {
     padding-left: .5em;
   }
 
+  .navbar {
+    padding-bottom: 0em;
+  }
+
   .navbar-nav {
     background-color: #8399c2b1;
   }
@@ -198,7 +221,10 @@ a {
 
   .right-side {
     width: 100%;
-    border: 1px solid red;
+  }
+
+  .content-container {
+    padding-bottom: 0em;
   }
 
   .title-hashtag {
@@ -221,18 +247,43 @@ a {
     font-size: .7em;
   }
 
-  .team-cards,
   .team-container {
-    display: flex;
-    flex-direction: row;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  .team-cards {
+    display: block;
+  }
+
+  .card {
+    width: 65%;
+    margin: .5em auto;
+    height: 30vh;
+  }
+
+
+  .links-btns {
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .btn {
+    width: 80px;
+    height: 70px;
+    line-height: 1rem;
+  }
+
+  .btn a {
+    font-size: .9rem;
   }
 
 
 
 
   .footer-container {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     font-size: .5rem;
   }
