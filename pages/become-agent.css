@@ -2,7 +2,8 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   color: whitesmoke;
-  max-width: 100%;
+  width: 100%;
+  height: 100vh;
   position: relative;
   box-sizing: border-box;
   background-color: #224D9B;
@@ -73,7 +74,6 @@ a {
   width: 100%;
   display: flex;
   margin-top: 1em;
-
 }
 
 .title,
@@ -184,6 +184,10 @@ a {
 /*------------- tablet ----------------------*/
 @media(max-width:768px) {
 
+  .content-container {
+    height: 90%;
+  }
+
   .link-btns-lg {
     display: none;
   }
@@ -196,6 +200,7 @@ a {
     margin-top: .5em;
     margin-right: .5em;
   }
+
 
   .title {
     font-size: 2.5rem;
@@ -214,6 +219,12 @@ a {
   }
 }
 
+@media(min-width:768px) {
+  .nav-logo {
+    display: none;
+    ;
+  }
+}
 
 
 /*------------- mobile ----------------------*/
@@ -226,7 +237,6 @@ a {
   .left-side {
     width: 100%;
     position: relative;
-
   }
 
   .logo-container {
@@ -239,13 +249,15 @@ a {
     display: none;
   }
 
-
-
   .right-side {
     width: 100%;
     margin: 0rem auto;
     position: absolute;
     top: 0;
+  }
+
+  .content-container {
+    height: 100%;
   }
 
   .navbar-dark .navbar-toggler {
@@ -275,7 +287,6 @@ a {
 
   .register-link {
     color: goldenrod !important;
-
   }
 
   .content-container {
@@ -283,12 +294,11 @@ a {
     height: 80vh;
     display: flex;
     flex-direction: column;
-    padding-bottom: .5em;
+    padding-bottom: 0em;
   }
 
   .title-hashtag {
     margin-top: 0rem;
-
     flex-direction: column;
   }
 
@@ -310,12 +320,13 @@ a {
     justify-content: center;
   }
 
+  .btn {
+    background-color: rgba(122, 0, 8, 0.444);
+  }
+
   .link-sm {
     text-shadow: 2px 2px 5px solid black;
   }
-
-
-
 
 
   .footer-container {
@@ -328,6 +339,4 @@ a {
     text-align: center;
     line-height: .5rem;
   }
-
-
 }
