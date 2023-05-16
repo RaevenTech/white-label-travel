@@ -156,7 +156,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  font-size: .8rem;
+  font-size: .5rem;
 }
 
 
@@ -165,6 +165,17 @@ a {
 @media(min-width:1024px) {
   .mobile-nav {
     display: none;
+  }
+
+  .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .5em;
+  }
+
+  p {
+    font-size: .7rem;
   }
 
 }
@@ -285,13 +296,15 @@ a {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 1em;
     font-size: .5rem;
   }
 
   .terms,
   .copyright {
-    margin-bottom: 0.5em;
+    margin-bottom: 0em;
   }
+
 
 }
 
