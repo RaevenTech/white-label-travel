@@ -49,9 +49,7 @@ a {
 .img {
   width: 60%;
   height: 60%;
-  margin-top: ;
   margin-bottom: 5em;
-  margin-left: ;
   margin-right: 4em;
   opacity: .7;
 }
@@ -186,10 +184,20 @@ a {
     max-width: 22em;
     margin-left: 4em;
   }
+
+  .img {
+    margin-left: 4em;
+  }
 }
 
 /*------------- tablet ----------------------*/
 @media(max-width:768px) {
+  .img {
+    width: 80%;
+    height: 60%;
+    margin-bottom: 7em;
+    margin-right: 0em;
+  }
 
   .content-container {
     height: 90%;
@@ -252,9 +260,11 @@ a {
     padding-top: .5em;
   }
 
-  .logo {
+  .logo,
+  .img {
     display: none;
   }
+
 
   .right-side {
     width: 100%;
