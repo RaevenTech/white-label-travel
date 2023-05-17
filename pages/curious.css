@@ -65,7 +65,7 @@ a {
 
 .right-side {
   width: 70%;
-
+  padding: 1em 0em 1.5em 0em;
 }
 
 .quote-hashtag {
@@ -120,10 +120,9 @@ a {
 .page-links-container {
   display: flex;
   align-items: center;
-  gap: 2.5em;
+  gap: 1.4em;
   height: 75px;
   margin-top: 2em;
-
 }
 
 .page-links-one,
@@ -131,7 +130,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.5em;
+  gap: 1.5em;
 }
 
 .page-links-one,
@@ -140,43 +139,34 @@ a {
 }
 
 .link {
-  width: 80px;
-  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 90px;
   background-color: #2f55963a;
-  text-align: center;
-  padding: 1.6em .5em .5em .5em;
   border-radius: 10px;
   line-height: 1rem;
   box-shadow: 1px 1px 5px 0px rgb(43, 43, 43),
     inset 0px 0px 5px 2px rgb(146, 184, 255);
 }
 
-.link-home-lg {
-  padding-top: 1.6em;
-}
 
 .link-sm {
-  text-align: center;
   font-size: .8rem;
-  width: 70px;
-  height: 65px;
-  padding-top: 1.8em;
+  width: 80px;
+  height: 70px;
   background-color: #1c5fd339;
   box-shadow: 1px 1px 4px rgb(78, 78, 78),
     inset 0px 0px 5px 1px rgb(194, 215, 255);
 }
 
 .link-sm-red {
+  text-align: center;
+  padding: 0em 1.2em;
   background-color: rgba(255, 0, 0, 0.139);
-  padding-top: .5rem;
-  padding-left: .8rem;
-  padding-right: .8rem;
   box-shadow: 2px 2px 5px 2px rgba(60, 60, 60, 0.597),
     inset 0px 0px 5px 2px rgb(241, 95, 95);
-}
-
-.link-red {
-  text-align: center;
 }
 
 
@@ -231,6 +221,12 @@ a {
 
 /*------------------- tablet styling --------------------*/
 @media(max-width:768px) {
+
+  .right-side,
+  .navbar {
+    padding-top: 0em;
+  }
+
   .logo-container {
     display: none;
   }
@@ -277,15 +273,6 @@ a {
     text-align: center;
     padding: .5em .5em;
   }
-
-  .link-lg {
-    padding-top: 1.5em;
-  }
-
-  .link-home-lg {
-    padding-top: 1.5em;
-  }
-
 }
 
 
@@ -312,6 +299,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    padding-top: .5em;
   }
 
   .page-quote {
@@ -328,7 +316,6 @@ a {
   }
 
   .page-links-one {
-    padding: 0em 1em;
     gap: 1.5em;
   }
 
