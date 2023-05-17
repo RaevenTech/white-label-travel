@@ -171,7 +171,7 @@ a {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: .5em;
+    padding: .5em .5em 0em .5em;
   }
 
   p {
