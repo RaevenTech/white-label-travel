@@ -107,14 +107,39 @@ a {
 }
 
 .card {
+  position: relative;
   width: 50%;
-  height: 50vh;
+  height: 100%;
   text-align: center;
   box-shadow: 2px 2px 4px 1px gray;
 }
 
+.member-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.name-role-wrapper {
+  width: 100%;
+  position: absolute;
+  bottom: .5em;
+}
+
+.name-role-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.name {
+  color: white;
+  font-size: 1.2rem;
+}
+
 .role {
   color: gold;
+  font-size: 1.2rem;
 }
 
 .links-btns,
@@ -279,7 +304,12 @@ a {
   .card {
     width: 65%;
     margin: .5em auto;
-    height: 30vh;
+    height: 30%;
+  }
+
+  .name,
+  .role {
+    font-size: 1em;
   }
 
 
