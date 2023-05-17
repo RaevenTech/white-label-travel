@@ -200,6 +200,11 @@ a {
     padding-left: 0em;
   }
 
+  .navbar-nav {
+    background-color: #8399c2b1;
+    padding: 0em 2em;
+  }
+
   .nav-logo {
     width: 5em;
     padding-left: .5em;
@@ -231,10 +236,6 @@ a {
 
   .navbar {
     padding-bottom: 0em;
-  }
-
-  .navbar-nav {
-    background-color: #8399c2b1;
   }
 
 
