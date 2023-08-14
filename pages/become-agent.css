@@ -121,6 +121,16 @@ a {
   color: #00B0F0;
 }
 
+/* page content */
+
+.contact-submition-form {
+  background-color: #B5C6E7;
+}
+
+.submit-btn {
+  background-color: #FFC000;
+}
+
 .link-btns,
 .link-btns-lg,
 .link-btns-sm {
