@@ -7,6 +7,7 @@ body {
   position: relative;
   box-sizing: border-box;
   background-color: #224D9B;
+  max-width: 1440px;
 }
 
 @media(min-width:1280px) {
@@ -122,14 +123,62 @@ a {
 }
 
 /* page content */
+.page-content {
+  height: 95%;
+  padding: 2em 2em 2em 0em;
+  overflow: scroll;
+}
+
+.content-subtitle-txt {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
 
 .contact-submition-form {
   background-color: #B5C6E7;
+  color: black;
+  padding: 1em 2em;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.form-input {
+  text-align: end;
+  margin-bottom: 1em;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-right: .5em;
+}
+
+input {
+  width: 70%;
+  padding-left: .5em;
+}
+
+::placeholder {
+  color: rgba(128, 128, 128, 0.398);
 }
 
 .submit-btn {
   background-color: #FFC000;
+  border: none;
+  padding: .5em 1.5em;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-left: 35%;
 }
+
+/* page content end */
+
 
 .link-btns,
 .link-btns-lg,
@@ -181,6 +230,8 @@ p,
     padding-left: 2em;
   }
 
+
+
   .footer-wrapper {
     position: absolute;
     bottom: 0;
@@ -217,6 +268,24 @@ p,
 
   .content-container {
     height: 90%;
+  }
+
+  .form-title {
+    font-size: 1.5rem;
+    line-height: 1.55rem;
+  }
+
+  label {
+    font-size: .9rem;
+  }
+
+  .submit-btn {
+    background-color: #FFC000;
+    border: none;
+    padding: .5em 1.5em;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-left: 30%;
   }
 
   .link-btns-lg {
@@ -291,6 +360,41 @@ p,
 
   .content-container {
     height: 100%;
+  }
+
+  .page-content {
+    padding: 1em;
+    margin: .5em 0em;
+  }
+
+  .contact-submition-form {
+    padding: .5em;
+    text-align: center;
+  }
+
+  .content-subtitle-txt {
+    font-size: 1rem;
+  }
+
+  .form-input {
+    text-align: center;
+    width: 100%;
+  }
+
+  label {
+    display: none;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .submit-btn {
+    font-weight: 600;
+    font-size: 1rem;
+    width: 70%;
+    margin-left: 2.1em;
+    padding: .25em 1em;
   }
 
   .navbar-dark .navbar-toggler {
