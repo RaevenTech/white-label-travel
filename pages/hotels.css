@@ -193,6 +193,10 @@ input {
     inset 0px 0px 5px 1px rgb(44, 81, 148);
 }
 
+.btn:hover {
+  color: #FFC000;
+}
+
 
 .footer-wrapper {
   width: 100%;
@@ -253,6 +257,11 @@ p {
     font-weight: 500;
     font-size: 1.1rem;
     margin-left: 30%;
+  }
+
+  .link-btns {
+    margin-top: .5em;
+    margin-bottom: -.75em;
   }
 }
 
@@ -325,6 +334,7 @@ p {
     padding: 1em;
     margin: .5em 0em;
     margin-top: -2em;
+    height: 80%;
   }
 
   .contact-submition-form {
@@ -337,7 +347,9 @@ p {
   }
 
   .form-title {
-    line-height: 1.25rem;
+    line-height: 1.2rem;
+    margin-top: 0em;
+    font-size: 1.1rem;
   }
 
   .form-input {
@@ -365,6 +377,7 @@ p {
   .link-btns {
     gap: 2em;
     justify-content: center;
+    margin-bottom: 1em;
   }
 
   .btn {
