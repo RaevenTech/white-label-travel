@@ -118,7 +118,7 @@ a {
 
 /* page content */
 .page-content {
-  height: 90%;
+  height: 60%;
   padding: 1em 2em 1em 0em;
   overflow: scroll;
   margin-top: -2.5em;
@@ -127,8 +127,8 @@ a {
 .content-subtitle-txt {
   text-align: center;
   color: whitesmoke;
-  font-size: 1.1rem;
-  margin-bottom: 1em;
+  font-size: 1rem;
+  margin-bottom: .5em;
   line-height: 1.2em;
 }
 
@@ -140,13 +140,13 @@ a {
 
 .form-title {
   text-align: center;
-  margin-bottom: .75em;
+  margin-bottom: .5em;
   margin-top: 0em;
 }
 
 .form-input {
   text-align: end;
-  margin-bottom: .65em;
+  margin-bottom: .5em;
 }
 
 label {
@@ -157,7 +157,7 @@ label {
 
 input {
   width: 70%;
-  height: 2em;
+  height: 1.75em;
   padding-left: .5em;
 }
 
@@ -168,7 +168,7 @@ input {
 .submit-btn {
   background-color: #FFC000;
   border: none;
-  padding: .5em 1.5em;
+  padding: .25em 1em;
   font-weight: 600;
   font-size: 1.25rem;
   margin-left: 35%;
@@ -180,6 +180,7 @@ input {
 }
 
 /* page content end */
+
 .btn {
   display: flex;
   justify-content: center;
@@ -216,7 +217,7 @@ p {
 /*------------------- PC ------------------------*/
 @media(min-width:1280px) {
   .page-content {
-    margin-top: -1.5em;
+    margin-top: -2.5em;
   }
 }
 
@@ -227,11 +228,11 @@ p {
   }
 
   .content-subtitle-txt {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .form-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 1.55rem;
     margin-top: .25em;
   }
